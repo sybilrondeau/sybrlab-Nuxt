@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Exo";
+    font-weight: 100 900;
+    font-style: normal;
+    display: swap;
+    src: url("~assets/fonts/Exo-VariableFont_wght.woff2") format("woff2"),
+      url("~assets/fonts/Exo-VariableFont_wght.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-family: "Muli";
+    font-weight: 200 900;
+    font-style: normal;
+    display: swap;
+    src: url("~assets/fonts/Muli-VariableFont_wght.woff2") format("woff2"),
+      url("~assets/fonts/Muli-VariableFont_wght.ttf") format("tff");
+  }
+  
+  @font-face {
+    font-family: "Muli";
+    font-weight: 200 900;
+    font-style: italic;
+    font-display: swap;
+    src: url("~assets/fonts/Muli-Italic.woff2") format("woff2"),
+      url("~assets/fonts/Muli-Italic-VariableFont_wght.ttf") format("ttf");
+  }
+  
+  h1 {
+    font-family: "Exo", sans-serif;
+    font-weight: 900;
+    font-variation-settings: "wght" 900;
+    font-size: 6.854rem;
+  
+    @include respond(phone) {
+      font-size: 4.236rem;
+    }
+  }
+  
+  h2 {
+    font-family: "Exo", sans-serif;
+    font-weight: 900;
+    font-variation-settings: "wght" 900;
+    margin: 30rem 0 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4.236rem;
+  
+    @include respond(phone) {
+      margin: 20rem 0 10rem;
+      font-size: 2.618rem;
+    }
+  }
+  
+  h3 {
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    font-variation-settings: "wght" 600;
+    font-size: 2.618rem;
+  }
+  
+  ul li {
+    font-family: "Muli", sans-serif;
+    list-style: none;
+  }
+  
+  p {
+    font-family: "Muli", sans-serif;
+    font-size: 1.618rem;
+    font-weight: 400;
+    font-kerning: normal;
+    hyphens: none;
+    color: var(--grey-dark);
+    line-height: 1.618;
+    margin-bottom: 1rem;
+  }
+  
+  strong {
+    color: black;
+    display: inline-block;
+  }
+  
+  .outline {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--grey-dark);
+    letter-spacing: 0.1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 800;
+  }
