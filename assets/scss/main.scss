@@ -23,26 +23,3 @@ main {
   margin: 0 auto;
   padding: 0 2rem;
 }
-
-.cursor {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: -20;
-  opacity: 1;
-  transition: transform 0.2s, background-color 0.2s;
-
-  @media (any-pointer: none) {
-    display: none;
-  }
-}
-
-.link-grow {
-  transform: scale(6) translate(-10%, -10%);
-  animation: blob 3s linear infinite alternate;
-}

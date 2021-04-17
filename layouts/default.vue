@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="cursor"></div>
+    <TheCursor />
     <TheNavBar />
     <Nuxt />
     <TheFooter />
@@ -8,15 +9,17 @@
 </template>
 
 <script>
-import TheNavBar from '@/components/TheNavBar.vue'
-import TheFooter from '@/components/TheFooter.vue'
+import TheNavBar from '@/components/TheNavBar.vue';
+import TheFooter from '@/components/TheFooter.vue';
+import TheCursor from '@/components/TheCursor.vue';
 
 export default {
   components: {
     TheNavBar,
     TheFooter,
+    TheCursor,
   },
-}
+};
 </script>
 
 <style></style>

@@ -13,8 +13,12 @@
           ><icon-lab
         /></icon-base>
       </nuxt-link>
-      <div class="info__top--btn body-link" data-state="close">
-        <icon-button @click="openNav" />
+      <div
+        class="info__top--btn body-link"
+        data-state="close"
+        @click="openNav"
+      >
+        <icon-button />
       </div>
     </div>
     <ul class="info__nav">
@@ -41,10 +45,12 @@
 <script>
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
 import IconButton from './icons/IconButton.vue';
 import IconLab from './icons/IconLab.vue';
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MorphSVGPlugin);
 
 export default {
   components: {
@@ -52,7 +58,51 @@ export default {
     IconButton,
   },
   methods: {
-    openNav() {},
+    openNav(e) {
+      const infoNav = document.querySelector('.info__nav');
+
+      // transformation circle button to cross
+      MorphSVGPlugin.convertToPath('.circle');
+      const navTl = gsap.timeline({
+        defaults: { duration: 1 },
+        paused: true,
+      });
+      navTl.to('.circle', { morphSVG: '.close-btn' });
+      navTl.to(
+        '.circle',
+        { attr: { fill: 'var(--primary' }, duration: 0.1 },
+        '<',
+      );
+
+      // no need for === here as I know the types !
+      if (e.currentTarget.dataset.state == 'close') {
+        infoNav.classList.remove('closeNav');
+        infoNav.classList.add('openNav');
+        navTl.play();
+        e.currentTarget.dataset.state = 'open';
+      } else {
+        infoNav.classList.remove('openNav');
+        infoNav.classList.add('closeNav');
+        navTl.reverse();
+        e.currentTarget.dataset.state = 'close';
+      }
+
+      // class active on menu items
+      function activeMenu(trigger, end, targets) {
+        ScrollTrigger.create({
+          trigger,
+          start: 'top bottom',
+          end,
+          // markers: true,
+          toggleClass: { targets, className: 'active' },
+        });
+      }
+
+      activeMenu('#section2', 'bottom 20%', '.nav-about');
+      activeMenu('#section3', 'bottom 20%', '.nav-portfolio');
+      activeMenu('#section4', 'bottom 20%', '.nav-skills');
+      activeMenu('#section5', '200% 20%', '.nav-contact');
+    },
   },
 };
 </script>

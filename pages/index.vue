@@ -30,7 +30,6 @@
             :key="aboutParagraph.title"
             :paragraph="aboutParagraph"
           >
-            <component :is="aboutParagraph.svg"></component>
           </base-paragraph>
         </div>
       </section>
@@ -219,17 +218,33 @@ export default {
     };
   },
   mounted() {
-    gsap.from('.about .paragraph', {
-      scrollTrigger: {
-        trigger: '.about .paragraph',
-        start: 'top 80%',
-        toggleActions: 'play none none reverse',
-      },
-      y: '4rem',
-      opacity: 0,
-      duration: 1,
-      stagger: 0.33,
-    });
+    function animSections(sectionItems, trigger, stagger) {
+      gsap.from(sectionItems, {
+        scrollTrigger: {
+          trigger,
+          start: 'top 80%',
+          toggleActions: 'play none none reverse',
+        },
+        y: '4rem',
+        opacity: 0,
+        duration: 1,
+        stagger,
+      });
+    }
+
+    const paragraphAbout = document.querySelectorAll(
+      '.about .paragraph',
+    );
+    const paragraphContact = document.querySelectorAll(
+      '.contact-section .paragraph',
+    );
+
+    animSections(paragraphAbout, '.about .paragraph', 0.33);
+    animSections(
+      paragraphContact,
+      '.contact-section .paragraph',
+      0.33,
+    );
 
     gsap.from('.draw-svg', {
       scrollTrigger: {
@@ -239,18 +254,6 @@ export default {
       },
       duration: 6,
       drawSVG: '50% 50%',
-    });
-
-    gsap.from('.contact-section .paragraph', {
-      scrollTrigger: {
-        trigger: '.contact-section .paragraph',
-        start: 'top 80%',
-        toggleActions: 'play none none reverse',
-      },
-      y: '4rem',
-      opacity: 0,
-      duration: 1,
-      stagger: 0.33,
     });
   },
 };
