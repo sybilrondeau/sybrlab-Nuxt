@@ -13,15 +13,11 @@
           ><icon-lab
         /></icon-base>
       </nuxt-link>
-      <div
-        class="info__top--btn body-link"
-        data-state="close"
-        @click="openNav"
-      >
+      <div class="info__top--btn body-link" @click="openNav">
         <icon-button />
       </div>
     </div>
-    <ul class="info__nav">
+    <ul ref="infoNav" class="info__nav">
       <li>
         <a href="#section2" class="nav-link nav-about">À propos</a>
       </li>
@@ -57,34 +53,35 @@ export default {
     IconLab,
     IconButton,
   },
+  data() {
+    return {
+      state: 'close',
+      navTl: gsap.timeline({
+        paused: true,
+      }),
+    };
+  },
   methods: {
-    openNav(e) {
-      const infoNav = document.querySelector('.info__nav');
-
+    openNav() {
       // transformation circle button to cross
       MorphSVGPlugin.convertToPath('.circle');
-      const navTl = gsap.timeline({
-        defaults: { duration: 1 },
-        paused: true,
-      });
-      navTl.to('.circle', { morphSVG: '.close-btn' });
-      navTl.to(
+      this.navTl.to('.circle', { morphSVG: '.close-btn' });
+      this.navTl.to(
         '.circle',
         { attr: { fill: 'var(--primary' }, duration: 0.1 },
         '<',
       );
 
-      // no need for === here as I know the types !
-      if (e.currentTarget.dataset.state == 'close') {
-        infoNav.classList.remove('closeNav');
-        infoNav.classList.add('openNav');
-        navTl.play();
-        e.currentTarget.dataset.state = 'open';
+      if (this.state == 'close') {
+        this.$refs.infoNav.classList.remove('closeNav');
+        this.$refs.infoNav.classList.add('openNav');
+        this.navTl.play();
+        this.state = 'open';
       } else {
-        infoNav.classList.remove('openNav');
-        infoNav.classList.add('closeNav');
-        navTl.reverse();
-        e.currentTarget.dataset.state = 'close';
+        this.$refs.infoNav.classList.remove('openNav');
+        this.$refs.infoNav.classList.add('closeNav');
+        this.navTl.reverse();
+        this.state = 'close';
       }
 
       // class active on menu items

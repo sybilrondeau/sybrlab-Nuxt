@@ -3,6 +3,7 @@
     <div
       v-for="portfolioItem in portfolio"
       :key="portfolioItem.id"
+      ref="portfolioItems"
       class="portfolio__item"
       :style="`margin: ${portfolioItem.margin}`"
     >
@@ -113,10 +114,7 @@ export default {
     };
   },
   mounted() {
-    const portfolioItems = document.querySelectorAll(
-      '.portfolio__item',
-    );
-    portfolioItems.forEach((portfolio) => {
+    this.$refs.portfolioItems.forEach((portfolio) => {
       const portfolioElements = portfolio.querySelectorAll(
         '.portfolio__item--image, .portfolio__item--title, .portfolio__item--credits, .portfolio__item--description',
       );
