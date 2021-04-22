@@ -150,7 +150,7 @@ export default {
     max-width: 50rem;
 
     @include respond(tab) {
-      margin: 0 0 10rem;
+      margin: 0 0 10rem !important;
     }
 
     &--image {

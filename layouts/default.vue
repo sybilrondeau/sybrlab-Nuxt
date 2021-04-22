@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="cursor"></div>
     <TheCursor />
     <TheNavBar />
     <Nuxt />
