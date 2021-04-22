@@ -49,4 +49,26 @@ export default {
   transform: scale(6) translate(-10%, -10%);
   animation: blob 3s linear infinite alternate;
 }
+
+@keyframes blob {
+  0% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%;
+  }
+}
+
+@keyframes arrowScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+    transform-origin: left;
+  }
+}
 </style>

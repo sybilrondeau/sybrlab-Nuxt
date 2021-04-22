@@ -17,24 +17,26 @@
         <icon-button />
       </div>
     </div>
-    <ul ref="infoNav" class="info__nav">
-      <li>
-        <a href="#section2" class="nav-link nav-about">À propos</a>
-      </li>
-      <li>
-        <a href="#section3" class="nav-link nav-portfolio"
-          >Portfolio</a
-        >
-      </li>
-      <li>
-        <a href="#section4" class="nav-link nav-skills"
-          >Compétences</a
-        >
-      </li>
-      <li>
-        <a href="#section5" class="nav-link nav-contact">Contact</a>
-      </li>
-    </ul>
+    <transition name="fade">
+      <ul v-if="isOpen" class="info__nav">
+        <li>
+          <a href="#section2" class="nav-link nav-about">À propos</a>
+        </li>
+        <li>
+          <a href="#section3" class="nav-link nav-portfolio"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="#section4" class="nav-link nav-skills"
+            >Compétences</a
+          >
+        </li>
+        <li>
+          <a href="#section5" class="nav-link nav-contact">Contact</a>
+        </li>
+      </ul>
+    </transition>
   </nav>
 </template>
 
@@ -55,7 +57,7 @@ export default {
   },
   data() {
     return {
-      state: 'close',
+      isOpen: false,
     };
   },
   mounted() {
@@ -70,15 +72,7 @@ export default {
     openNav() {
       // toogle play and reverse on timeline
       this.navTl.reversed(!this.navTl.reversed());
-      if (this.state == 'close') {
-        this.$refs.infoNav.classList.remove('closeNav');
-        this.$refs.infoNav.classList.add('openNav');
-        this.state = 'open';
-      } else {
-        this.$refs.infoNav.classList.remove('openNav');
-        this.$refs.infoNav.classList.add('closeNav');
-        this.state = 'close';
-      }
+      this.isOpen = !this.isOpen;
 
       // class active on menu items
       function activeMenu(trigger, end, targets) {
@@ -154,7 +148,7 @@ export default {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: -30rem;
+    top: 0rem;
     background-color: white;
     z-index: 50;
 
@@ -192,19 +186,20 @@ export default {
   color: var(--primary) !important;
 }
 
-.openNav {
-  animation: openNav 1s forwards;
+.fade-enter,
+.fade-leave-to {
+  transform: translate3D(0, -10rem, 0);
 
-  @include respond(tabSmall) {
-    animation: openNavTab 1s forwards;
+  @include respond(phone) {
+    transform: translate3D(0, -28rem, 0);
   }
 }
 
-.closeNav {
-  animation: closeNav 1s forwards;
-
-  @include respond(tabSmall) {
-    animation: closeNavTab 1s forwards;
-  }
+.fade-leave-from {
+  transform: translate3D(0, 0, 0);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: transform 1s ease-out;
 }
 </style>
