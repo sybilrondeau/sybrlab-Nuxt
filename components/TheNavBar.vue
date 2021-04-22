@@ -56,31 +56,27 @@ export default {
   data() {
     return {
       state: 'close',
-      navTl: gsap.timeline({
-        paused: true,
-      }),
     };
+  },
+  mounted() {
+    const circle = MorphSVGPlugin.convertToPath('.circle');
+    this.navTl = gsap
+      .timeline()
+      .to(circle, { morphSVG: '.close-btn' })
+      .to(circle, { fill: 'var(--primary', duration: 0.1 }, '<')
+      .reverse();
   },
   methods: {
     openNav() {
-      // transformation circle button to cross
-      MorphSVGPlugin.convertToPath('.circle');
-      this.navTl.to('.circle', { morphSVG: '.close-btn' });
-      this.navTl.to(
-        '.circle',
-        { attr: { fill: 'var(--primary' }, duration: 0.1 },
-        '<',
-      );
-
+      // toogle play and reverse on timeline
+      this.navTl.reversed(!this.navTl.reversed());
       if (this.state == 'close') {
         this.$refs.infoNav.classList.remove('closeNav');
         this.$refs.infoNav.classList.add('openNav');
-        this.navTl.play();
         this.state = 'open';
       } else {
         this.$refs.infoNav.classList.remove('openNav');
         this.$refs.infoNav.classList.add('closeNav');
-        this.navTl.reverse();
         this.state = 'close';
       }
 
