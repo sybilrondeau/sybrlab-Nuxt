@@ -1,42 +1,25 @@
 <template>
-  <div
-    ref="mouseCursor"
-    class="cursor"
-    :style="{ top: top, left: left }"
-    @mousemove="coordinates"
-  ></div>
+  <div ref="cursor" class="cursor"></div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      top: 0,
-      left: 0,
-    };
-  },
   mounted() {
-    // // custom cursor
-    // window.addEventListener('mousemove', (e) => {
-    //   mouseCursor.style.top = e.pageY + 'px';
-    //   mouseCursor.style.left = e.pageX + 'px';
-    // });
+    // custom cursor
+    window.addEventListener('mousemove', (e) => {
+      this.$refs.cursor.style.top = e.pageY + 'px';
+      this.$refs.cursor.style.left = e.pageX + 'px';
+    });
     // hover on links
-    // const links = document.querySelectorAll('.body-link');
-    // links.forEach((element) => {
-    //   element.addEventListener('mouseleave', (e) => {
-    //     mouseCursor.classList.remove('link-grow');
-    //   });
-    //   element.addEventListener('mouseover', (e) => {
-    //     mouseCursor.classList.add('link-grow');
-    //   });
-    // });
-  },
-  methods: {
-    coordinates(e) {
-      this.top = e.pageY + 'px';
-      this.left = e.pageX + 'px';
-    },
+    const links = document.querySelectorAll('.body-link');
+    links.forEach((element) => {
+      element.addEventListener('mouseleave', (e) => {
+        this.$refs.cursor.classList.remove('link-grow');
+      });
+      element.addEventListener('mouseover', (e) => {
+        this.$refs.cursor.classList.add('link-grow');
+      });
+    });
   },
 };
 </script>
