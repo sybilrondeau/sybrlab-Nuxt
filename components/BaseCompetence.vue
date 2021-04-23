@@ -1,47 +1,14 @@
 <template>
   <div class="competences">
-    <icon-base class="competences__item" icon-name="html"
-      ><icon-html
-    /></icon-base>
-    <icon-base class="competences__item" icon-name="css"
-      ><icon-css
-    /></icon-base>
     <icon-base
+      v-for="competence in competences"
+      :key="competence.name"
       class="competences__item"
-      view-box="0 0 256 192"
-      icon-name="sass"
-      ><icon-sass
-    /></icon-base>
-    <icon-base
-      class="competences__item"
-      view-box="0 0 256 256"
-      icon-name="js"
-      ><icon-js
-    /></icon-base>
-    <icon-base
-      class="competences__item"
-      view-box="0 0 512 180"
-      icon-name="rails"
-      ><icon-rails
-    /></icon-base>
-    <icon-base
-      class="competences__item"
-      view-box="0 0 256 221"
-      icon-name="vue"
-      ><icon-vue
-    /></icon-base>
-    <icon-base
-      class="competences__item"
-      view-box="0 0 256 191"
-      icon-name="nuxt"
-      ><icon-nuxt
-    /></icon-base>
-    <icon-base
-      class="competences__item"
-      view-box="0 0 307.01 355.871"
-      icon-name="gsap"
-      ><icon-gsap
-    /></icon-base>
+      :icon-name="competence.name"
+      :view-box="competence.viewBox"
+    >
+      <component :is="competence.svg"></component>
+    </icon-base>
   </div>
 </template>
 
@@ -70,6 +37,52 @@ export default {
     IconVue,
     IconNuxt,
     IconGsap,
+  },
+  data() {
+    return {
+      competences: [
+        {
+          name: 'HTML',
+          viewBox: '0 0 256 361',
+          svg: 'icon-html',
+        },
+        {
+          name: 'CSS',
+          viewBox: '0 0 256 361',
+          svg: 'icon-css',
+        },
+        {
+          name: 'Sass',
+          viewBox: '0 0 256 192',
+          svg: 'icon-sass',
+        },
+        {
+          name: 'Javascript',
+          viewBox: '0 0 256 256',
+          svg: 'icon-js',
+        },
+        {
+          name: 'Ruby on Rails',
+          viewBox: '0 0 512 180',
+          svg: 'icon-rails',
+        },
+        {
+          name: 'Vue',
+          viewBox: '0 0 256 221',
+          svg: 'icon-vue',
+        },
+        {
+          name: 'Nuxt',
+          viewBox: '0 0 256 191',
+          svg: 'icon-nuxt',
+        },
+        {
+          name: 'Gsap',
+          viewBox: '0 0 307.01 355.871',
+          svg: 'icon-gsap',
+        },
+      ],
+    };
   },
   mounted() {
     gsap.from('.competences__item', {
