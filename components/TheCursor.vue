@@ -46,6 +46,7 @@ export default {
   transform: scale(6) translate(-10%, -10%);
   animation: blob 3s linear infinite alternate;
 }
+
 @keyframes blob {
   0% {
     border-radius: 50%;

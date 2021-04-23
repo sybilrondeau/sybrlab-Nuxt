@@ -118,6 +118,7 @@ export default {
       const portfolioElements = portfolio.querySelectorAll(
         '.portfolio__item--image, .portfolio__item--title, .portfolio__item--credits, .portfolio__item--description',
       );
+
       gsap.from(portfolioElements, {
         scrollTrigger: {
           trigger: portfolio,

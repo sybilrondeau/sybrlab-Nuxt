@@ -14,14 +14,17 @@
           </base-paragraph>
         </div>
       </section>
+
       <section id="section3" class="portfolio-section">
         <h2><span class="outline">Portfolio</span></h2>
         <base-portfolio />
       </section>
+
       <section id="section4" class="competences-section">
         <h2><span class="outline">Compétences</span></h2>
         <base-competence />
       </section>
+
       <section id="section5" class="contact-section anim-text">
         <h2><span class="outline">Contact</span></h2>
         <div class="paragraphes">
@@ -33,6 +36,7 @@
           </base-paragraph>
         </div>
       </section>
+
       <section class="cta">
         <div class="cta__main">
           <h2 class="cta__title">Un projet ?</h2>
@@ -232,16 +236,9 @@ export default {
       });
     }
 
-    const paragraphAbout = document.querySelectorAll(
-      '.about .paragraph',
-    );
-    const paragraphContact = document.querySelectorAll(
-      '.contact-section .paragraph',
-    );
-
-    animSections(paragraphAbout, '.about .paragraph', 0.33);
+    animSections('.about .paragraph', '.about .paragraph', 0.33);
     animSections(
-      paragraphContact,
+      '.contact-section .paragraph',
       '.contact-section .paragraph',
       0.33,
     );

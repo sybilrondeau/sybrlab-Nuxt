@@ -1,5 +1,5 @@
 <template>
-  <div class="paragraph">
+  <div ref="ref" class="paragraph">
     <div class="paragraph__title">
       <h3>{{ paragraph.title }}</h3>
       <slot></slot>
