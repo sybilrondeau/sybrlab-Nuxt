@@ -5,7 +5,7 @@
       :key="portfolioItem.id"
       ref="portfolioItems"
       class="portfolio__item"
-      :style="`margin: ${portfolioItem.margin}`"
+      :style="{ margin: portfolioItem.margin }"
     >
       <img
         class="portfolio__item--image"

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <TheCursor />
-    <TheNavBar />
+    <the-cursor />
+    <the-navBar />
     <Nuxt />
-    <TheFooter />
+    <the-footer />
   </div>
 </template>
 
@@ -20,5 +20,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

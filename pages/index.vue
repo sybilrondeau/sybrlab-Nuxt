@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheHeader />
+    <the-header />
     <main>
       <section id="section2" class="about anim-text">
         <h2><span class="outline">À Propos</span></h2>
@@ -37,7 +37,7 @@
         </div>
       </section>
 
-      <BaseCta />
+      <base-cta />
     </main>
   </div>
 </template>

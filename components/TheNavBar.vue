@@ -195,9 +195,6 @@ export default {
   }
 }
 
-.fade-leave-from {
-  transform: translate3D(0, 0, 0);
-}
 .fade-enter-active,
 .fade-leave-active {
   transition: transform 1s ease-out;
