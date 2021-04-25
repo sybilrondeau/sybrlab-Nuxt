@@ -38,7 +38,10 @@
           target="_blank"
           aria-label="Instagram de Sybil Rondeau"
         >
-          <icon-base view-box="0 0 256 256" icon-name="instagram"
+          <icon-base
+            class="body-link"
+            view-box="0 0 256 256"
+            icon-name="instagram"
             ><icon-instagram
           /></icon-base>
         </a>

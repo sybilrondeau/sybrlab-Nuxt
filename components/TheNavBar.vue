@@ -65,7 +65,6 @@ export default {
     this.navTl = gsap
       .timeline()
       .to(circle, { morphSVG: '.close-btn' })
-      .to(circle, { fill: 'var(--primary', duration: 0.1 }, '<')
       .reverse();
   },
   methods: {
@@ -80,7 +79,6 @@ export default {
           trigger,
           start: 'top bottom',
           end,
-          // markers: true,
           toggleClass: { targets, className: 'active' },
         });
       }
@@ -183,7 +181,7 @@ export default {
 
 // menu active class on items
 .active {
-  color: var(--primary) !important;
+  color: var(--primary);
 }
 
 .fade-enter,
