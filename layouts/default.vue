@@ -45,6 +45,7 @@ export default {
         this.isHover = true;
       } else {
         this.isHover = false;
+        console.log(e);
       }
     },
   },

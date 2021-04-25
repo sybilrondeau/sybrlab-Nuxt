@@ -3,11 +3,11 @@
     <div class="info__top">
       <nuxt-link
         :to="{ name: 'index' }"
-        class="info__top--logo body-link"
+        class="info__top--logo"
         aria-label="Logo SybR Lab"
       >
         <icon-base
-          class="logoLab"
+          class="logoLab body-link"
           icon-name="logoLab"
           view-box="0 0 246.06 155.7"
           ><icon-lab
