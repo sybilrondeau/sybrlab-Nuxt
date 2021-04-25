@@ -80,30 +80,19 @@ export default {
         {
           title: 'Expertise',
           description: `Je suis spécialisée en développement
-          <strong>Front-end et Javascript</strong> avec une appétence
-          pour <strong>l'animation</strong>. <br />Depuis ma
-          certification au Wagon Nantes en mars 2020, je me forme au
-          long cours activement dans ces domaines.`,
+          <strong>Front-end</strong> avec une appétence
+          pour <strong>l'animation</strong> et le <strong>Javascript</strong>, depuis ma
+          certification au Wagon à Nantes en mars 2020.`,
           svg: 'icon-mesure',
         },
         {
-          title: 'Bonnes Pratiques',
-          description: `Dans tous les sites que je développe, je porte une attention
-          particulière aux notions de
-          <strong>performance, accessibilité, sécurité, SEO</strong> :
-          un ensemble de bonnes pratiques à implémenter dès la
-          construction d'un site, indispensable à sa longévité et une
-          base solide à un référencement naturel de qualité.`,
+          title: 'Expérience',
+          description: `J'ai réalisé des sites WordPress pendant 2 ans.
+          Cela m'a permis de m'intéresser aux notions de
+           <strong>performances, accessibilité, sécurité et SEO</strong> : 
+          Un ensemble de bonnes pratiques à implémenter dès la construction d'un site, indispensable à 
+          sa longévité et une base solide à un référencement naturel de qualité.`,
           svg: 'icon-book',
-        },
-        {
-          title: 'Équipe',
-          description: `Je travaille en <strong>collaboration</strong> avec des
-          développeurs Back-end, web Designers, Directeurs Artistique,
-          Graphistes, Rédacteurs, Photographes, Vidéastes...<br />
-          Pour créer des <strong>sites</strong> internet ou des
-          <strong>applications</strong> uniques.`,
-          svg: 'icon-wheel',
         },
         {
           title: 'Parcours',
@@ -119,26 +108,19 @@ export default {
           >
           documentaire de famille depuis plus de 10 ans.<br />
           Ce métier était ma première reconversion, après 12 ans en
-          tant que manipulatrice en radiologie médicale aux urgences
+          tant que <b>manipulatrice en radiologie</b> médicale aux urgences
           (et de nuit !).`,
           svg: 'icon-camera',
         },
       ],
       contactParagraphs: [
         {
-          title: 'Missions Front-end et JS',
-          description: `Vous êtes <strong>Agence</strong> Web ou
-          <strong>Développeur</strong> et vous avez besoin d’une
-          développeuse Front-end et/ou Javascript freelance ?<br />
+          title: 'Missions Front-end',
+          description: `Vous êtes une <strong>Agence</strong> Web, une <strong>Start-up</strong> ou
+          un(e)<strong>Développeur(euse)</strong> et vous avez besoin d’une
+          développeuse Front-end ?<br />
           Je suis disponible pour des <strong>missions</strong> de
-          courte ou longue durée.`,
-        },
-        {
-          title: 'Création de site',
-          description: `Vous êtes <strong>entrepreneur</strong> et avez besoin d’un
-          site ou d'une application ?<br />
-          Je travaille avec une équipe de freelance pour répondre à
-          tous vos besoins.`,
+          courte ou longue durée, et à l'écoute des propositions de postes dans ce domaine.`,
         },
       ],
     };

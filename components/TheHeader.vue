@@ -5,7 +5,7 @@
     </div>
     <h1>
       Je suis Sybil Rondeau,<br /><span class="outline"
-        >Developpeuse Front-end et Javascript.</span
+        >Developpeuse<br />Front-end</span
       >
     </h1>
   </header>

@@ -1,7 +1,6 @@
 <template>
   <section class="cta">
     <div class="cta__main">
-      <h2 class="cta__title">Un projet ?</h2>
       <p class="cta__p">
         <a
           id="email"
@@ -81,12 +80,23 @@
 </template>
 
 <script>
-export default {};
+import IconBase from '@/components/IconBase.vue';
+import IconInstagram from '@/components/icons/IconInstagram.vue';
+import IconLinkedin from '@/components/icons/IconLinkedin.vue';
+import IconCodepen from '@/components/icons/IconCodepen.vue';
+
+export default {
+  components: {
+    IconBase,
+    IconInstagram,
+    IconLinkedin,
+    IconCodepen,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .cta {
-  height: 100vh;
   text-align: center;
   display: grid;
   justify-content: center;
@@ -106,7 +116,8 @@ export default {};
   }
 
   &__main {
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-bottom: 20%;
 
     .cta__title {
       text-align: center;
@@ -136,6 +147,7 @@ export default {};
 
     @include respond(phone) {
       display: flex;
+      margin-bottom: 5rem;
     }
 
     li {
@@ -143,8 +155,8 @@ export default {};
     }
 
     svg {
-      width: 3rem;
-      height: 3rem;
+      width: 2rem;
+      height: 2rem;
     }
   }
 }
