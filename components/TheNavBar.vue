@@ -41,14 +41,14 @@
 </template>
 
 <script>
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { MorphSVGPlugin } from 'gsap/dist/MorphSVGPlugin';
 import IconButton from './icons/IconButton.vue';
 import IconLab from './icons/IconLab.vue';
-
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MorphSVGPlugin);
+if (process.client) {
+  gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
+}
 
 export default {
   components: {
