@@ -58,6 +58,7 @@ export default {
         href: 'favicon_lab.png',
       },
     ],
+    script: [{ src: '/MorphSVGPlugin.min.js', body: true }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -94,5 +95,7 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: ['gsap'],
+  },
 };

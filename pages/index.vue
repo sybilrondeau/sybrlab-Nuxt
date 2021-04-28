@@ -55,8 +55,8 @@ import IconBook from '@/components/icons/IconBook.vue';
 import IconCamera from '@/components/icons/IconCamera.vue';
 import IconWheel from '@/components/icons/IconWheel.vue';
 import IconMesure from '@/components/icons/IconMesure.vue';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
@@ -116,8 +116,8 @@ export default {
       contactParagraphs: [
         {
           title: 'Missions Front-end',
-          description: `Vous êtes une <strong>Agence</strong> Web, une <strong>Start-up</strong> ou
-          un(e)<strong>Développeur(euse)</strong> et vous avez besoin d’une
+          description: `Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, 
+          une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une
           développeuse Front-end ?<br />
           Je suis disponible pour des <strong>missions</strong> de
           courte ou longue durée, et à l'écoute des propositions de postes dans ce domaine.`,

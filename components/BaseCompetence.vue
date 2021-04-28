@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import IconBase from './IconBase.vue';
 import IconHtml from './icons/IconHtml.vue';
 import IconCss from './icons/IconCss.vue';

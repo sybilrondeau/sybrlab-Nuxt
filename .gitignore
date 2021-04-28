@@ -90,3 +90,6 @@ sw.*
 *.swp
 
 gsap-bonus.tgz
+
+static/MorphSVGPlugin.min.js
+static/MorphSVGPlugin.min.js.map
