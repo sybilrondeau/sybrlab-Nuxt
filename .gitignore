@@ -91,9 +91,9 @@ sw.*
 
 gsap-bonus.tgz
 
-./static/MorphSVGPlugin.min.js
-./static/MorphSVGPlugin.min.js.map
-./static/DrawSVGPlugin.min.js
-./static/DrawSVGPlugin.min.js.map
-./static/ScrollTrigger.min.js
-./static/ScrollTrigger.min.js.map
+static/MorphSVGPlugin.min.js
+static/MorphSVGPlugin.min.js.map
+static/DrawSVGPlugin.min.js
+static/DrawSVGPlugin.min.js.map
+static/ScrollTrigger.min.js
+static/ScrollTrigger.min.js.map
