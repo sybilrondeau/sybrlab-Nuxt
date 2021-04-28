@@ -10,7 +10,7 @@
 
 <script>
 import gsap from 'gsap';
-import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
+import MorphSVGPlugin from '~/static/MorphSVGPlugin.min.js';
 gsap.registerPlugin(MorphSVGPlugin);
 
 export default {
