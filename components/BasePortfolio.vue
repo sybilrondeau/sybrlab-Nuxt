@@ -14,11 +14,9 @@
       <div class="portfolio__item--title">
         <div class="title-arrow">
           <h3>{{ portfolioItem.title }}</h3>
-          <svg class="arrow-rounded">
-            <use
-              xlink:href="~assets/images/sprite.svg#arrow-straight"
-            ></use>
-          </svg>
+          <icon-base view-box="0 0 100 100" icon-name="arrow"
+            ><icon-arrow
+          /></icon-base>
         </div>
         <p>{{ portfolioItem.id }}.</p>
       </div>
@@ -47,10 +45,16 @@
 
 <script>
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import IconBase from './IconBase.vue';
+import IconArrow from './icons/IconArrow.vue';
+import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
+  components: {
+    IconBase,
+    IconArrow,
+  },
   data() {
     return {
       portfolio: [
@@ -122,7 +126,7 @@ export default {
       gsap.from(portfolioElements, {
         scrollTrigger: {
           trigger: portfolio,
-          start: 'top 80%',
+          start: 'top 70%',
           toggleActions: 'play none none reverse',
         },
         y: '4rem',

@@ -19,7 +19,7 @@
 
 <script>
 import gsap from 'gsap';
-import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
+import { DrawSVGPlugin } from '~/static/DrawSVGPlugin.min.js';
 gsap.registerPlugin(DrawSVGPlugin);
 
 export default {

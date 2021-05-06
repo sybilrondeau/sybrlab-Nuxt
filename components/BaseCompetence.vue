@@ -14,7 +14,6 @@
 
 <script>
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import IconBase from './IconBase.vue';
 import IconHtml from './icons/IconHtml.vue';
 import IconCss from './icons/IconCss.vue';
@@ -24,6 +23,7 @@ import IconRails from './icons/IconRails.vue';
 import IconVue from './icons/IconVue.vue';
 import IconNuxt from './icons/IconNuxt.vue';
 import IconGsap from './icons/IconGsap.vue';
+import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
@@ -88,7 +88,7 @@ export default {
     gsap.from('.competences__item', {
       scrollTrigger: {
         trigger: '.competences-section',
-        start: 'top 80%',
+        start: 'top 60%',
         toggleActions: 'play none none reverse',
       },
       y: '4rem',

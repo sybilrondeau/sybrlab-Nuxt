@@ -45,7 +45,6 @@ export default {
         this.isHover = true;
       } else {
         this.isHover = false;
-        console.log(e);
       }
     },
   },
@@ -86,7 +85,7 @@ export default {
     border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%;
   }
 }
-
+/*
 @keyframes arrowScale {
   0% {
     transform: scale(1);
@@ -96,4 +95,5 @@ export default {
     transform-origin: left;
   }
 }
+*/
 </style>

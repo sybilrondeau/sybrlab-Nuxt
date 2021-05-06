@@ -56,7 +56,7 @@ import IconCamera from '@/components/icons/IconCamera.vue';
 import IconWheel from '@/components/icons/IconWheel.vue';
 import IconMesure from '@/components/icons/IconMesure.vue';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {

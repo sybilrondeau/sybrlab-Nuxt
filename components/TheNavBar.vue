@@ -41,15 +41,17 @@
 </template>
 
 <script>
-import { gsap } from 'gsap/dist/gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { gsap } from 'gsap';
+import IconBase from './IconBase.vue';
 import IconButton from './icons/IconButton.vue';
 import IconLab from './icons/IconLab.vue';
+import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 import { MorphSVGPlugin } from '~/static/MorphSVGPlugin.min.js';
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
 
 export default {
   components: {
+    IconBase,
     IconLab,
     IconButton,
   },

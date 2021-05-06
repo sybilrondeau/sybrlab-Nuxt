@@ -51,12 +51,14 @@
 </template>
 
 <script>
+import IconBase from './IconBase.vue';
 import IconCodepen from './icons/IconCodepen.vue';
 import IconLinkedin from './icons/IconLinkedin.vue';
 import IconInstagram from './icons/IconInstagram.vue';
 
 export default {
   components: {
+    IconBase,
     IconCodepen,
     IconLinkedin,
     IconInstagram,
