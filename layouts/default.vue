@@ -38,14 +38,15 @@ export default {
       this.top = e.pageY + 'px';
       this.left = e.pageX + 'px';
 
-      if (
-        this.target.includes(e.target.className) ||
-        this.target.includes(e.target.tagName)
-      ) {
-        this.isHover = true;
-      } else {
-        this.isHover = false;
-      }
+      this.isHover = !!e.composedPath().find((el) => {
+        if (el.classList) {
+          return (
+            this.target.includes(el.tagName) ||
+            this.target.find((t) => el.classList.contains(t))
+          );
+        }
+        return false;
+      });
     },
   },
 };
