@@ -171,17 +171,17 @@ export default {
 
     .nav-link {
       color: var(--grey-dark);
+
+      // menu active class on items
+      &.active {
+        color: var(--primary);
+      }
     }
 
     .nav-link:hover {
       color: var(--primary);
     }
   }
-}
-
-// menu active class on items
-.active {
-  color: var(--primary);
 }
 
 .fade-enter,
