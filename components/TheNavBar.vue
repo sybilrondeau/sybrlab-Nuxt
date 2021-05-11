@@ -10,8 +10,8 @@
           class="logoLab body-link"
           icon-name="logoLab"
           view-box="0 0 246.06 155.7"
-          ><icon-lab
-        /></icon-base>
+          icon-svg="icon-lab"
+        />
       </nuxt-link>
       <div class="info__top--btn body-link" @click="openNav">
         <icon-button />
@@ -44,7 +44,6 @@
 import { gsap } from 'gsap';
 import IconBase from './IconBase.vue';
 import IconButton from './icons/IconButton.vue';
-import IconLab from './icons/IconLab.vue';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 import { MorphSVGPlugin } from '~/static/MorphSVGPlugin.min.js';
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
@@ -52,7 +51,6 @@ gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
 export default {
   components: {
     IconBase,
-    IconLab,
     IconButton,
   },
   data() {

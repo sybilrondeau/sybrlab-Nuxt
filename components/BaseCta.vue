@@ -33,9 +33,7 @@
             target="_blank"
             aria-label="Codepen de Sybrlab"
           >
-            <icon-base view-box="0 0 256 256" icon-name="codepen"
-              ><icon-codepen
-            /></icon-base>
+            <icon-base view-box="0 0 256 256" icon-name="codepen" icon-svg="icon-codepen" />
           </a>
         </li>
         <li>
@@ -50,8 +48,8 @@
             <icon-base
               view-box="0 0 22.258 22.258"
               icon-name="linkedin"
-              ><icon-linkedin
-            /></icon-base>
+              icon-svg="icon-linkedin"
+              />
           </a>
         </li>
         <li>
@@ -63,9 +61,7 @@
             target="_blank"
             aria-label="Instagram de Sybil Rondeau"
           >
-            <icon-base view-box="0 0 256 256" icon-name="instagram"
-              ><icon-instagram
-            /></icon-base>
+            <icon-base view-box="0 0 256 256" icon-name="instagram" icon-svg="icon-instagram"/>
           </a>
         </li>
       </ul>
@@ -81,16 +77,10 @@
 
 <script>
 import IconBase from '@/components/IconBase.vue';
-import IconInstagram from '@/components/icons/IconInstagram.vue';
-import IconLinkedin from '@/components/icons/IconLinkedin.vue';
-import IconCodepen from '@/components/icons/IconCodepen.vue';
 
 export default {
   components: {
-    IconBase,
-    IconInstagram,
-    IconLinkedin,
-    IconCodepen,
+    IconBase
   },
 };
 </script>

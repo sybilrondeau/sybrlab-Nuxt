@@ -10,9 +10,7 @@
           target="_blank"
           aria-label="Codepen de Sybrlab"
         >
-          <icon-base view-box="0 0 256 256" icon-name="codepen"
-            ><icon-codepen
-          /></icon-base>
+          <icon-base view-box="0 0 256 256" icon-name="codepen" icon-svg="icon-codepen" />
         </a>
       </li>
       <li>
@@ -24,9 +22,7 @@
           target="_blank"
           aria-label="Linkekin de Sybil Rondeau"
         >
-          <icon-base view-box="0 0 22.258 22.258" icon-name="linkedin"
-            ><icon-linkedin
-          /></icon-base>
+          <icon-base view-box="0 0 22.258 22.258" icon-name="linkedin" icon-svg="icon-linkedin" />
         </a>
       </li>
       <li>
@@ -42,8 +38,7 @@
             class="body-link"
             view-box="0 0 256 256"
             icon-name="instagram"
-            ><icon-instagram
-          /></icon-base>
+            icon-svg="icon-instagram" />
         </a>
       </li>
     </ul>

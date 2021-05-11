@@ -6,37 +6,20 @@
       class="competences__item"
       :icon-name="competence.name"
       :view-box="competence.viewBox"
-    >
-      <component :is="competence.svg"></component>
-    </icon-base>
+      :icon-svg="competence.svg"
+    />
   </div>
 </template>
 
 <script>
 import { gsap } from 'gsap';
 import IconBase from './IconBase.vue';
-import IconHtml from './icons/IconHtml.vue';
-import IconCss from './icons/IconCss.vue';
-import IconSass from './icons/IconSass.vue';
-import IconJs from './icons/IconJs.vue';
-import IconRails from './icons/IconRails.vue';
-import IconVue from './icons/IconVue.vue';
-import IconNuxt from './icons/IconNuxt.vue';
-import IconGsap from './icons/IconGsap.vue';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
   components: {
-    IconBase,
-    IconHtml,
-    IconCss,
-    IconSass,
-    IconJs,
-    IconRails,
-    IconVue,
-    IconNuxt,
-    IconGsap,
+    IconBase
   },
   data() {
     return {

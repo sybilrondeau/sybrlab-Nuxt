@@ -8,16 +8,49 @@
     role="img"
   >
     <title :id="iconName" lang="fr">{{ iconName }} icon</title>
-    <slot />
+    <component :is="iconSvg" />
   </svg>
 </template>
 
 <script>
+import IconHtml from './icons/IconHtml.vue';
+import IconCss from './icons/IconCss.vue';
+import IconSass from './icons/IconSass.vue';
+import IconJs from './icons/IconJs.vue';
+import IconRails from './icons/IconRails.vue';
+import IconVue from './icons/IconVue.vue';
+import IconNuxt from './icons/IconNuxt.vue';
+import IconGsap from './icons/IconGsap.vue';
+import IconInstagram from './icons/IconInstagram.vue';
+import IconLinkedin from './icons/IconLinkedin.vue';
+import IconCodepen from './icons/IconCodepen.vue';
+import IconArrow from './icons/IconArrow.vue';
+import IconLab from './icons/IconLab.vue';
+
 export default {
+  components: {
+    IconHtml,
+    IconCss,
+    IconSass,
+    IconJs,
+    IconRails,
+    IconVue,
+    IconNuxt,
+    IconGsap,
+    IconInstagram,
+    IconLinkedin,
+    IconCodepen,
+    IconArrow,
+    IconLab,
+  },
   props: {
     iconName: {
       type: String,
       default: 'box',
+    },
+    iconSvg: {
+      type: String,
+      required: true,
     },
     width: {
       type: [Number, String],
