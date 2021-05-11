@@ -26,6 +26,10 @@ import IconLinkedin from './icons/IconLinkedin.vue';
 import IconCodepen from './icons/IconCodepen.vue';
 import IconArrow from './icons/IconArrow.vue';
 import IconLab from './icons/IconLab.vue';
+import IconBook from './icons/IconBook.vue';
+import IconCamera from './icons/IconCamera.vue';
+import IconWheel from './icons/IconWheel.vue';
+import IconMesure from './icons/IconMesure.vue';
 
 export default {
   components: {
@@ -42,6 +46,10 @@ export default {
     IconCodepen,
     IconArrow,
     IconLab,
+    IconBook,
+    IconCamera,
+    IconWheel,
+    IconMesure,
   },
   props: {
     iconName: {

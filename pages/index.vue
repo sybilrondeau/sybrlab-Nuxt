@@ -10,7 +10,11 @@
             :key="aboutParagraph.title"
             :paragraph="aboutParagraph"
           >
-            <component :is="aboutParagraph.svg"></component>
+            <icon-base
+              viewBox="0 0 521.78 450.53"
+              :icon-svg="aboutParagraph.svg"
+              :icon-name="aboutParagraph.title"
+            />
           </base-paragraph>
         </div>
       </section>
@@ -48,13 +52,7 @@ import BaseParagraph from '@/components/BaseParagraph.vue';
 import BasePortfolio from '@/components/BasePortfolio.vue';
 import BaseCompetence from '@/components/BaseCompetence.vue';
 import BaseCta from '@/components/BaseCta.vue';
-import IconLinkedin from '@/components/icons/IconLinkedin.vue';
-import IconCodepen from '@/components/icons/IconCodepen.vue';
-import IconInstagram from '@/components/icons/IconInstagram.vue';
-import IconBook from '@/components/icons/IconBook.vue';
-import IconCamera from '@/components/icons/IconCamera.vue';
-import IconWheel from '@/components/icons/IconWheel.vue';
-import IconMesure from '@/components/icons/IconMesure.vue';
+import IconBase from '@/components/IconBase.vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
@@ -66,13 +64,7 @@ export default {
     BasePortfolio,
     BaseCompetence,
     BaseCta,
-    IconCodepen,
-    IconInstagram,
-    IconLinkedin,
-    IconBook,
-    IconCamera,
-    IconWheel,
-    IconMesure,
+    IconBase,
   },
   data() {
     return {
