@@ -14,9 +14,11 @@
       <div class="portfolio__item--title">
         <div class="title-arrow">
           <h3>{{ portfolioItem.title }}</h3>
-          <icon-base view-box="0 0 100 100" icon-name="arrow"
-            ><icon-arrow
-          /></icon-base>
+          <icon-base
+            view-box="0 0 100 100"
+            icon-name="arrow"
+            icon-svg="icon-arrow"
+          />
         </div>
         <p>{{ portfolioItem.id }}.</p>
       </div>
@@ -46,14 +48,12 @@
 <script>
 import { gsap } from 'gsap';
 import IconBase from './IconBase.vue';
-import IconArrow from './icons/IconArrow.vue';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
   components: {
     IconBase,
-    IconArrow,
   },
   data() {
     return {

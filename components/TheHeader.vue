@@ -1,7 +1,7 @@
 <template>
   <header id="section1" class="intro">
     <div class="portrait-svg">
-      <icon-portrait />
+      <base-portrait />
     </div>
     <h1>
       Je suis Sybil Rondeau,<br /><span class="outline"
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import IconPortrait from './icons/IconPortrait.vue';
+import BasePortrait from './BasePortrait.vue';
 
 export default {
   components: {
-    IconPortrait,
+    BasePortrait,
   },
 };
 </script>

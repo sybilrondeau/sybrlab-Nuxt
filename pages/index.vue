@@ -10,7 +10,11 @@
             :key="aboutParagraph.title"
             :paragraph="aboutParagraph"
           >
-            <component :is="aboutParagraph.svg"></component>
+            <icon-base
+              view-box="0 0 521.78 450.53"
+              :icon-svg="aboutParagraph.svg"
+              :icon-name="aboutParagraph.title"
+            />
           </base-paragraph>
         </div>
       </section>
@@ -48,14 +52,9 @@ import BaseParagraph from '@/components/BaseParagraph.vue';
 import BasePortfolio from '@/components/BasePortfolio.vue';
 import BaseCompetence from '@/components/BaseCompetence.vue';
 import BaseCta from '@/components/BaseCta.vue';
-import IconLinkedin from '@/components/icons/IconLinkedin.vue';
-import IconCodepen from '@/components/icons/IconCodepen.vue';
-import IconInstagram from '@/components/icons/IconInstagram.vue';
-import IconBook from '@/components/icons/IconBook.vue';
-import IconCamera from '@/components/icons/IconCamera.vue';
-import IconWheel from '@/components/icons/IconWheel.vue';
-import IconMesure from '@/components/icons/IconMesure.vue';
+import IconBase from '@/components/IconBase.vue';
 import { gsap } from 'gsap';
+import * as myParagraphs from '../assets/js/staticData.js';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,64 +65,11 @@ export default {
     BasePortfolio,
     BaseCompetence,
     BaseCta,
-    IconCodepen,
-    IconInstagram,
-    IconLinkedin,
-    IconBook,
-    IconCamera,
-    IconWheel,
-    IconMesure,
+    IconBase,
   },
-  data() {
-    return {
-      aboutParagraphs: [
-        {
-          title: 'Expertise',
-          description: `Je suis spécialisée en développement
-          <strong>Front-end</strong> avec une appétence
-          pour <strong>l'animation</strong> et le <strong>Javascript</strong>, depuis ma
-          certification au Wagon à Nantes en mars 2020.`,
-          svg: 'icon-mesure',
-        },
-        {
-          title: 'Expérience',
-          description: `J'ai réalisé des sites WordPress pendant 2 ans.
-          Cela m'a permis de m'intéresser aux notions de
-           <strong>performances, accessibilité, sécurité et SEO</strong> : 
-          Un ensemble de bonnes pratiques à implémenter dès la construction d'un site, indispensable à 
-          sa longévité et une base solide à un référencement naturel de qualité.`,
-          svg: 'icon-book',
-        },
-        {
-          title: 'Parcours',
-          description: `Je suis aussi SybR,
-          <strong
-            ><a
-              class="body-link"
-              href="https://sybilrondeau.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >photographe</a
-            ></strong
-          >
-          documentaire de famille depuis plus de 10 ans.<br />
-          Ce métier était ma première reconversion, après 12 ans en
-          tant que <b>manipulatrice en radiologie</b> médicale aux urgences
-          (et de nuit !).`,
-          svg: 'icon-camera',
-        },
-      ],
-      contactParagraphs: [
-        {
-          title: 'Missions Front-end',
-          description: `Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, 
-          une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une
-          développeuse Front-end ?<br />
-          Je suis disponible pour des <strong>missions</strong> de
-          courte ou longue durée, et à l'écoute des propositions de postes dans ce domaine.`,
-        },
-      ],
-    };
+  created() {
+    this.contactParagraphs = myParagraphs.contactParagraphs;
+    this.aboutParagraphs = myParagraphs.aboutParagraphs;
   },
   mounted() {
     function animSections(sectionItems, trigger, stagger) {

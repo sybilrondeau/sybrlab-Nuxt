@@ -1,5 +1,5 @@
 <template>
-  <div @mousemove="customCursor">
+  <div @mousemove="moveCustomCursor">
     <div
       ref="cursor"
       :class="[{ 'link-grow': isHover }, cursorClass]"
@@ -30,22 +30,23 @@ export default {
       left: 0,
       isHover: false,
       cursorClass: 'cursor',
-      target: ['a', 'nuxt-link', 'body-link'],
+      targets: ['a', 'nuxt-link', 'body-link'],
     };
   },
   methods: {
-    customCursor(e) {
+    moveCustomCursor(e) {
       this.top = e.pageY + 'px';
       this.left = e.pageX + 'px';
 
-      if (
-        this.target.includes(e.target.className) ||
-        this.target.includes(e.target.tagName)
-      ) {
-        this.isHover = true;
-      } else {
-        this.isHover = false;
-      }
+      this.isHover = !!e.composedPath().find((el) => {
+        if (el.classList) {
+          return (
+            this.targets.includes(el.tagName) ||
+            this.targets.find((t) => el.classList.contains(t))
+          );
+        }
+        return false;
+      });
     },
   },
 };

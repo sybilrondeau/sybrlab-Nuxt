@@ -10,11 +10,11 @@
           class="logoLab body-link"
           icon-name="logoLab"
           view-box="0 0 246.06 155.7"
-          ><icon-lab
-        /></icon-base>
+          icon-svg="icon-lab"
+        />
       </nuxt-link>
       <div class="info__top--btn body-link" @click="openNav">
-        <icon-button />
+        <the-nav-bar-button />
       </div>
     </div>
     <transition name="fade">
@@ -43,8 +43,7 @@
 <script>
 import { gsap } from 'gsap';
 import IconBase from './IconBase.vue';
-import IconButton from './icons/IconButton.vue';
-import IconLab from './icons/IconLab.vue';
+import TheNavBarButton from './TheNavBarButton.vue';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 import { MorphSVGPlugin } from '~/static/MorphSVGPlugin.min.js';
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
@@ -52,8 +51,7 @@ gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
 export default {
   components: {
     IconBase,
-    IconLab,
-    IconButton,
+    TheNavBarButton,
   },
   data() {
     return {
@@ -171,6 +169,10 @@ export default {
 
     .nav-link {
       color: var(--grey-dark);
+
+      &.active {
+        color: var(--primary);
+      }
     }
 
     .nav-link:hover {
@@ -180,9 +182,11 @@ export default {
 }
 
 // menu active class on items
+/*
 .active {
   color: var(--primary);
 }
+*/
 
 .fade-enter,
 .fade-leave-to {
