@@ -41,9 +41,9 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
 import IconBase from './IconBase.vue';
 import TheNavBarButton from './TheNavBarButton.vue';
+import { gsap } from '~/static/gsap.min.js';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 import { MorphSVGPlugin } from '~/static/MorphSVGPlugin.min.js';
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);

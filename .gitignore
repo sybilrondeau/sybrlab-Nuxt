@@ -89,8 +89,8 @@ sw.*
 # Vim swap files
 *.swp
 
-gsap-bonus.tgz
-
+static/gsap.min.js
+static/gsap.min.js.map
 static/MorphSVGPlugin.min.js
 static/MorphSVGPlugin.min.js.map
 static/DrawSVGPlugin.min.js

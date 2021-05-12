@@ -46,8 +46,8 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
 import IconBase from './IconBase.vue';
+import { gsap } from '~/static/gsap.min.js';
 import { portfolio } from '~/assets/js/staticDataPortfolio.js';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);

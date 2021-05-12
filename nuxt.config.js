@@ -1,3 +1,5 @@
+import { API_ROOT, I18N } from './config';
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -86,6 +88,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    ['nuxt-i18n', I18N],
   ],
   styleResources: {
     scss: ['./assets/scss/*.scss'],

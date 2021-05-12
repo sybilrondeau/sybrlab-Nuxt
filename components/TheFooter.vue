@@ -51,15 +51,18 @@
         </a>
       </li>
     </ul>
+    <the-language-switcher />
   </footer>
 </template>
 
 <script>
 import IconBase from './IconBase.vue';
+import TheLanguageSwitcher from './TheLanguageSwitcher.vue';
 
 export default {
   components: {
     IconBase,
+    TheLanguageSwitcher,
   },
 };
 </script>

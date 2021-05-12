@@ -4,7 +4,7 @@
       <base-portrait />
     </div>
     <h1>
-      Je suis Sybil Rondeau,<br /><span class="outline"
+      {{ $t('title') }},<br /><span class="outline"
         >Developpeuse<br />Front-end</span
       >
     </h1>

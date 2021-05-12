@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import gsap from 'gsap';
+import { gsap } from '~/static/gsap.min.js';
 import { DrawSVGPlugin } from '~/static/DrawSVGPlugin.min.js';
 gsap.registerPlugin(DrawSVGPlugin);
 
