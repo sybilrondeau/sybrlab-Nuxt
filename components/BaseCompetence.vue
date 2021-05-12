@@ -14,6 +14,7 @@
 <script>
 import { gsap } from 'gsap';
 import IconBase from './IconBase.vue';
+import { competences } from '~/assets/js/staticDataCompetence.js';
 import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,51 +22,8 @@ export default {
   components: {
     IconBase,
   },
-  data() {
-    return {
-      competences: [
-        {
-          name: 'HTML',
-          viewBox: '0 0 256 361',
-          svg: 'icon-html',
-        },
-        {
-          name: 'CSS',
-          viewBox: '0 0 256 361',
-          svg: 'icon-css',
-        },
-        {
-          name: 'Sass',
-          viewBox: '0 0 256 192',
-          svg: 'icon-sass',
-        },
-        {
-          name: 'Javascript',
-          viewBox: '0 0 256 256',
-          svg: 'icon-js',
-        },
-        {
-          name: 'Ruby on Rails',
-          viewBox: '0 0 512 180',
-          svg: 'icon-rails',
-        },
-        {
-          name: 'Vue',
-          viewBox: '0 0 256 221',
-          svg: 'icon-vue',
-        },
-        {
-          name: 'Nuxt',
-          viewBox: '0 0 256 191',
-          svg: 'icon-nuxt',
-        },
-        {
-          name: 'Gsap',
-          viewBox: '0 0 307.01 355.871',
-          svg: 'icon-gsap',
-        },
-      ],
-    };
+  created() {
+    this.competences = competences;
   },
   mounted() {
     gsap.from('.competences__item', {
