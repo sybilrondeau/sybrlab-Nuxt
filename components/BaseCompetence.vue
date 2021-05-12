@@ -13,9 +13,9 @@
 
 <script>
 import IconBase from './IconBase.vue';
-import { gsap } from '~/dist/gsap.min.js';
+import { gsap } from '~/static/gsap.min.js';
 import { competences } from '~/assets/js/staticDataCompetence.js';
-import { ScrollTrigger } from '~/dist/ScrollTrigger.min.js';
+import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {

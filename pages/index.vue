@@ -54,8 +54,8 @@ import BaseCompetence from '@/components/BaseCompetence.vue';
 import BaseCta from '@/components/BaseCta.vue';
 import IconBase from '@/components/IconBase.vue';
 import * as myParagraphs from '../assets/js/staticDataParagraphs.js';
-import { gsap } from '~/dist/gsap.min.js';
-import { ScrollTrigger } from '~/dist/ScrollTrigger.min.js';
+import { gsap } from '~/static/gsap.min.js';
+import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
