@@ -60,7 +60,12 @@ export default {
         href: 'favicon_lab.png',
       },
     ],
-    script: [{ src: '/MorphSVGPlugin.min.js', body: true }],
+    script: [
+      { src: '/MorphSVGPlugin.min.js', body: true },
+      { src: '/ScrollTrigger.min.js', body: true },
+      { src: '/gsap.min.js', body: true },
+      { src: '/DrawSVGPlugin.min.js', body: true },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
