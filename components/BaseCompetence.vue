@@ -12,10 +12,10 @@
 </template>
 
 <script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import IconBase from './IconBase.vue';
-import { gsap } from '~/static/gsap.min.js';
 import { competences } from '~/assets/js/staticDataCompetence.js';
-import { ScrollTrigger } from '~/static/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {

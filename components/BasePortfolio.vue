@@ -46,10 +46,10 @@
 </template>
 
 <script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import IconBase from './IconBase.vue';
-import { gsap } from '~/dist/gsap.min.js';
 import { portfolio } from '~/assets/js/staticDataPortfolio.js';
-import { ScrollTrigger } from '~/dist/ScrollTrigger.min.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {

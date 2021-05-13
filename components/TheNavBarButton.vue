@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import { gsap } from '~/static/gsap.min.js';
-import { MorphSVGPlugin } from '~/static/MorphSVGPlugin.min.js';
+import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin.js';
+import { gsap } from 'gsap';
 gsap.registerPlugin(MorphSVGPlugin);
 
 export default {
