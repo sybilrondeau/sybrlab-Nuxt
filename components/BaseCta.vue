@@ -18,7 +18,7 @@
           href="tel:+33629426276"
           rel="noopener noreferrer"
           target="_blank"
-          >06 29 42 62 76</a
+          >{{ $t('tel') }}</a
         >
       </p>
     </div>
@@ -75,10 +75,7 @@
       </ul>
     </div>
     <p class="cta__legal">
-      Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont
-      44300 Nantes - Hébergeur : O2switch - Immatriculation au
-      répertoire des métiers de Nantes 51273025000069 - TVA
-      FR0A512730250
+      {{ $t('legal') }}
     </p>
   </section>
 </template>

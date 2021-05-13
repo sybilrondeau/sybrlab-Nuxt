@@ -1,7 +1,5 @@
-import en from '../languages/en-US.js';
-import fr from '../languages/fr-FR.js';
-
-export const API_ROOT = 'https://jsonplaceholder.typicode.com/';
+import en from '../languages/en-US.json';
+import fr from '../languages/fr-FR.json';
 
 export const I18N = {
   locales: [

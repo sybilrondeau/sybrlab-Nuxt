@@ -1,0 +1,53 @@
+{
+  "siteTitle1": "Je suis",
+  "siteTitle2": "Développeuse",
+  "siteTitle3": "Front-end",
+  "portfolio": {
+    "portfolio1":
+    {
+      "id": "01",
+      "title": "Sybr Lab",
+      "description": "J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>. <br />J'ai utilisé une échelle modulaire basée sur le nombre d'Or pour la typographie, en clin d'oeil à ma carrière de photographe. <br />Le site est un One-page simple réalisé d'abord sans framework avec un simple bundler Parcel, puis pour sa V3 au sein du framework Vue.js et Nuxt. J'utilise la librairie Javascript Greensock pour certaines animations.",
+      "image": "sybrlab-650",
+      "margin": "0 25.89rem 0 0",
+      "creditMakersOne": "Site sur-mesure",
+      "creditMakersTwo": "Web Design : Sybil Rondeau",
+      "creditMakersThree": "Illustrations : Loeiza Coccolini",
+      "creditTechOne": "Vue.js",
+      "creditTechTwo": "NuxT",
+      "creditTechThree": "GSAP"
+    },
+    "portfolio2":
+    {
+      "id": "02",
+      "title": "WSSA",
+      "description": "",
+      "image": "wssa-650",
+      "margin": "0 0 0 25.89rem",
+      "creditMakersOne": "Application DrakkR - Nantes",
+      "creditMakersTwo": "Web Design : Ambroise Nicolao",
+      "creditMakersThree": "",
+      "creditTechOne": "Ruby on Rails",
+      "creditTechTwo": "Datatables",
+      "creditTechThree": ""
+    },
+    "portfolio3":
+    {
+      "id": "03",
+      "title": "PhotographR",
+      "description": "",
+      "image": "photographr-650",
+      "margin": "0 25.89rem 0 0",
+      "creditMakersOne": "Projet du Wagon",
+      "creditMakersTwo": "Travail en équipe de 3",
+      "creditMakersThree": "",
+      "creditTechOne": "Ruby on Rails",
+      "creditTechTwo": "",
+      "creditTechThree": ""
+    }
+  },
+  "about": "À Propos",
+  "competence": "Compétences",
+  "tel": "06 29 42 62 76",
+  "legal": "Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hébergeur : Netlify - Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250"
+}

@@ -1,0 +1,53 @@
+{
+  "siteTitle1": "I am",
+  "siteTitle2": "Front-end",
+  "siteTitle3": "Developer",
+  "portfolio": {
+    "portfolio1":
+    {
+      "id": "01",
+      "title": "Sybr Lab",
+      "description": "I like <strong>clean</strong> and smooth websites, where typography and design are important. I used a modular scale based on the Gold number, in reference to my photography career. This is a quite simple one-page that I made without any framework at first, with a Parcel bundle. Then, I migrated the website into Nuxt. I used Greensock library for animation.",
+      "image": "sybrlab-650",
+      "margin": "0 25.89rem 0 0",
+      "creditMakersOne": "Site sur-mesure",
+      "creditMakersTwo": "Web Design : Sybil Rondeau",
+      "creditMakersThree": "Illustrations : Loeiza Coccolini",
+      "creditTechOne": "Vue.js",
+      "creditTechTwo": "NuxT",
+      "creditTechThree": "GSAP"
+    },
+    "portfolio2":
+    {
+      "id": "02",
+      "title": "WSSA",
+      "description": "",
+      "image": "wssa-650",
+      "margin": "0 0 0 25.89rem",
+      "creditMakersOne": "Application DrakkR - Nantes",
+      "creditMakersTwo": "Web Design : Ambroise Nicolao",
+      "creditMakersThree": "",
+      "creditTechOne": "Ruby on Rails",
+      "creditTechTwo": "Datatables",
+      "creditTechThree": ""
+    },
+    "portfolio3":
+    {
+      "id": "03",
+      "title": "PhotographR",
+      "description": "",
+      "image": "photographr-650",
+      "margin": "0 25.89rem 0 0",
+      "creditMakersOne": "Projet du Wagon",
+      "creditMakersTwo": "Work in a team (3)",
+      "creditMakersThree": "",
+      "creditTechOne": "Ruby on Rails",
+      "creditTechTwo": "",
+      "creditTechThree": ""
+    }
+  },
+  "about": "About",
+  "competence": "Skills",
+  "tel": "+33 629 426 276",
+  "legal": "Site owner: Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hosting: Netlify - Nantes Registration 51273025000069 - TVA FR0A512730250"
+}

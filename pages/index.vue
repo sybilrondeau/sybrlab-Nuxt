@@ -3,7 +3,9 @@
     <the-header />
     <main>
       <section id="section2" class="about anim-text">
-        <h2><span class="outline">À Propos</span></h2>
+        <h2>
+          <span class="outline">{{ $t('about') }}</span>
+        </h2>
         <div class="paragraphes">
           <base-paragraph
             v-for="aboutParagraph in aboutParagraphs"
@@ -20,12 +22,16 @@
       </section>
 
       <section id="section3" class="portfolio-section">
-        <h2><span class="outline">Portfolio</span></h2>
+        <h2>
+          <span class="outline">Portfolio</span>
+        </h2>
         <base-portfolio />
       </section>
 
       <section id="section4" class="competences-section">
-        <h2><span class="outline">Compétences</span></h2>
+        <h2>
+          <span class="outline">{{ $t('competence') }}</span>
+        </h2>
         <base-competence />
       </section>
 

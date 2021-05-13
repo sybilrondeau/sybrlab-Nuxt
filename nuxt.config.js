@@ -1,4 +1,4 @@
-import { API_ROOT, I18N } from './config';
+import { I18N } from './config';
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -60,12 +60,7 @@ export default {
         href: 'favicon_lab.png',
       },
     ],
-    script: [
-      { src: '/MorphSVGPlugin.min.js', body: true },
-      { src: '/ScrollTrigger.min.js', body: true },
-      { src: '/gsap.min.js', body: true },
-      { src: '/DrawSVGPlugin.min.js', body: true },
-    ],
+    script: [],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

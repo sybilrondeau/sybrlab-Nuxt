@@ -1,8 +1,8 @@
 <template>
   <span class="lang-switcher">
     <nuxt-link
-      v-for="(locale, i) in showLocales"
-      :key="i"
+      v-for="locale in showLocales"
+      :key="locale.code"
       :to="switchLocalePath(locale.code)"
     >
       {{ locale.name }}

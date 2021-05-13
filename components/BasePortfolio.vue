@@ -1,8 +1,8 @@
 <template>
   <div class="portfolio">
     <div
-      v-for="portfolioItem in portfolio"
-      :key="portfolioItem.id"
+      v-for="(portfolioItem, index) in $t('portfolio')"
+      :key="index"
       ref="portfolioItems"
       class="portfolio__item"
       :style="{ margin: portfolioItem.margin }"

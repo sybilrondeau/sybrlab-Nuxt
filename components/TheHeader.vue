@@ -4,8 +4,8 @@
       <base-portrait />
     </div>
     <h1>
-      {{ $t('title') }},<br /><span class="outline"
-        >Developpeuse<br />Front-end</span
+      {{ $t('siteTitle1') }} Sybil Rondeau,<br /><span class="outline"
+        >{{ $t('siteTitle2') }}<br />{{ $t('siteTitle3') }}</span
       >
     </h1>
   </header>
