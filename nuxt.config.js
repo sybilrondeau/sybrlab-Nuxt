@@ -59,6 +59,11 @@ export default {
         type: 'image/png',
         href: 'favicon_lab.png',
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css',
+      },
     ],
     script: [],
   },

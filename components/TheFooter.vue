@@ -50,8 +50,10 @@
           />
         </a>
       </li>
+      <li>
+        <the-language-switcher class="body-link" />
+      </li>
     </ul>
-    <the-language-switcher />
   </footer>
 </template>
 

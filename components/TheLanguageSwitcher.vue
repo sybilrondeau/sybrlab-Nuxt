@@ -5,7 +5,12 @@
       :key="locale.code"
       :to="switchLocalePath(locale.code)"
     >
-      {{ locale.name }}
+      <span
+        :class="
+          'flag-icon flag-icon-squared flag-icon-' +
+          locale.iso.slice(-2).toLowerCase()
+        "
+      ></span>
     </nuxt-link>
   </span>
 </template>
@@ -24,10 +29,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.lang-switcher {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  font-size: 2rem;
+.flag-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-top: 4rem;
 }
 </style>

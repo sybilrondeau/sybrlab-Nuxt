@@ -10,18 +10,18 @@
       "description": "I like <strong>clean</strong> and smooth websites, where typography and design are important. I used a modular scale based on the Gold number, in reference to my photography career. This is a quite simple one-page that I made without any framework at first, with a Parcel bundle. Then, I migrated the website into Nuxt. I used Greensock library for animation.",
       "image": "sybrlab-650",
       "margin": "0 25.89rem 0 0",
-      "creditMakersOne": "Site sur-mesure",
+      "creditMakersOne": "Vue.js Website",
       "creditMakersTwo": "Web Design : Sybil Rondeau",
       "creditMakersThree": "Illustrations : Loeiza Coccolini",
       "creditTechOne": "Vue.js",
-      "creditTechTwo": "NuxT",
+      "creditTechTwo": "Nuxt",
       "creditTechThree": "GSAP"
     },
     "portfolio2":
     {
       "id": "02",
       "title": "WSSA",
-      "description": "",
+      "description": "I did a Front-end work on this <strong>application</strong> that shares competition results of the Word Slalom Skaters Association. Ranks are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
       "image": "wssa-650",
       "margin": "0 0 0 25.89rem",
       "creditMakersOne": "Application DrakkR - Nantes",
@@ -35,7 +35,7 @@
     {
       "id": "03",
       "title": "PhotographR",
-      "description": "",
+      "description": "This is a project made during the Wagon bootcamp, a customer relationship management for photographers. Watch it on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project promoter.",
       "image": "photographr-650",
       "margin": "0 25.89rem 0 0",
       "creditMakersOne": "Projet du Wagon",
