@@ -86,15 +86,4 @@ export default {
     border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%;
   }
 }
-/*
-@keyframes arrowScale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
-    transform-origin: left;
-  }
-}
-*/
 </style>

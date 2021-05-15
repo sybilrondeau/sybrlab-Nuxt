@@ -156,14 +156,14 @@ export default {
     }
 
     li {
-      padding: 4rem 1.618rem;
+      padding: 4rem var(--small);
       font-style: normal;
       font-weight: 400;
       text-transform: uppercase;
-      font-size: 1.4rem;
+      font-size: var(--extra-small);
 
       @include respond(tabSmall) {
-        padding: 1.618rem;
+        padding: var(--small);
       }
     }
 
@@ -180,13 +180,6 @@ export default {
     }
   }
 }
-
-// menu active class on items
-/*
-.active {
-  color: var(--primary);
-}
-*/
 
 .fade-enter,
 .fade-leave-to {

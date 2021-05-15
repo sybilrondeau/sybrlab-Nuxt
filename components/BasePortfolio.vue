@@ -142,7 +142,7 @@ export default {
       li {
         font-style: italic;
         color: var(--grey-dark);
-        font-size: 1.4rem;
+        font-size: var(--extra-small);
       }
 
       .credits-makers {

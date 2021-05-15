@@ -1,10 +1,11 @@
 :root {
   --base-size: 1rem;
   --type-scale: 1.618;
-  --p: calc(var(--base-size) * var(--type-scale));
-  --h3: calc(var(--p) * var(--type-scale));
-  --h2: calc(var(--h3) * var(--type-scale));
-  --h1: calc(var(--h2) * var(--type-scale));
+  --extra-small: 1.4rem;
+  --small: calc(var(--base-size) * var(--type-scale));
+  --normal: calc(var(--small) * var(--type-scale));
+  --big: calc(var(--normal) * var(--type-scale));
+  --extra-big: calc(var(--big) * var(--type-scale));
 }
 
 @font-face {
@@ -41,10 +42,10 @@ h1 {
   font-family: 'Exo', sans-serif;
   font-weight: 900;
   font-variation-settings: 'wght' 900;
-  font-size: var(--h1);
+  font-size: var(--extra-big);
 
   @include respond(phone) {
-    font-size: var(--h2);
+    font-size: var(--big);
   }
 }
 
@@ -55,11 +56,11 @@ h2 {
   margin: 30rem 0 10rem;
   text-transform: uppercase;
   text-align: center;
-  font-size: var(--h2);
+  font-size: var(--big);
 
   @include respond(phone) {
     margin: 20rem 0 10rem;
-    font-size: var(--h3);
+    font-size: var(--normal);
   }
 }
 
@@ -67,7 +68,7 @@ h3 {
   font-family: 'Exo', sans-serif;
   font-weight: 600;
   font-variation-settings: 'wght' 600;
-  font-size: var(--h3);
+  font-size: var(--normal);
 }
 
 ul li {
@@ -78,7 +79,7 @@ ul li {
 p {
   font-family: 'Muli', sans-serif;
   //font-size: 1.618rem;
-  font-size: var(--p);
+  font-size: var(--small);
   font-weight: 400;
   font-kerning: normal;
   hyphens: none;

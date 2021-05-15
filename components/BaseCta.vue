@@ -119,24 +119,24 @@ export default {
 
     .cta__title {
       text-align: center;
-      font-size: 6.854rem;
+      font-size: var(--extra-big);
       margin: 0 0 2rem;
 
       @include respond(phone) {
-        font-size: 4.236rem;
+        font-size: var(--big);
       }
     }
 
     #email {
-      font-size: 4.236rem;
+      font-size: var(--big);
 
       @include respond(phone) {
-        font-size: 2.618rem;
+        font-size: var(--normal);
       }
     }
 
     #tel {
-      font-size: 2.618rem;
+      font-size: var(--normal);
     }
   }
 
