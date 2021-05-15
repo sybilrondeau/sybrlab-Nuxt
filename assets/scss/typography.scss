@@ -1,3 +1,12 @@
+:root {
+  --base-size: 1rem;
+  --type-scale: 1.618;
+  --p: calc(var(--base-size) * var(--type-scale));
+  --h3: calc(var(--p) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+}
+
 @font-face {
   font-family: 'Exo';
   font-weight: 100 900;
@@ -32,10 +41,10 @@ h1 {
   font-family: 'Exo', sans-serif;
   font-weight: 900;
   font-variation-settings: 'wght' 900;
-  font-size: 6.854rem;
+  font-size: var(--h1);
 
   @include respond(phone) {
-    font-size: 4.236rem;
+    font-size: var(--h2);
   }
 }
 
@@ -46,11 +55,11 @@ h2 {
   margin: 30rem 0 10rem;
   text-transform: uppercase;
   text-align: center;
-  font-size: 4.236rem;
+  font-size: var(--h2);
 
   @include respond(phone) {
     margin: 20rem 0 10rem;
-    font-size: 2.618rem;
+    font-size: var(--h3);
   }
 }
 
@@ -58,7 +67,7 @@ h3 {
   font-family: 'Exo', sans-serif;
   font-weight: 600;
   font-variation-settings: 'wght' 600;
-  font-size: 2.618rem;
+  font-size: var(--h3);
 }
 
 ul li {
@@ -68,7 +77,8 @@ ul li {
 
 p {
   font-family: 'Muli', sans-serif;
-  font-size: 1.618rem;
+  //font-size: 1.618rem;
+  font-size: var(--p);
   font-weight: 400;
   font-kerning: normal;
   hyphens: none;
