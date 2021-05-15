@@ -87,7 +87,7 @@ export default {
     svg {
       width: 2rem;
       height: 2rem;
-      margin-top: 4rem;
+      margin-bottom: 4rem;
     }
 
     svg:hover {

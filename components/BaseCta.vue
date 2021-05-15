@@ -72,6 +72,9 @@
             />
           </a>
         </li>
+        <li>
+          <the-language-switcher class="body-link" />
+        </li>
       </ul>
     </div>
     <p class="cta__legal">
@@ -146,7 +149,7 @@ export default {
     }
 
     li {
-      padding: 0 4rem;
+      padding: 0 3rem;
     }
 
     svg {

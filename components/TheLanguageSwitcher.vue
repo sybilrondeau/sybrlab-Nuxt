@@ -33,6 +33,5 @@ export default {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  margin-top: 4rem;
 }
 </style>
