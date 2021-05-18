@@ -9,6 +9,7 @@
     >
       <img
         class="portfolio__item--image"
+        :alt="portfolioItem.alt"
         :src="require(`~/assets/images/${portfolioItem.image}.jpg`)"
       />
       <div class="portfolio__item--title">

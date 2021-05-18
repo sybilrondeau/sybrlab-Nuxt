@@ -51,10 +51,7 @@
         </a>
       </li>
       <li>
-        <the-language-switcher
-          class="body-link"
-          aria-label="language switcher"
-        />
+        <the-language-switcher class="body-link" />
       </li>
     </ul>
   </footer>

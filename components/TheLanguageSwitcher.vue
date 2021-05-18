@@ -1,5 +1,5 @@
 <template>
-  <span class="lang-switcher">
+  <span class="lang-switcher" aria-label="language switcher">
     <nuxt-link
       v-for="locale in showLocales"
       :key="locale.code"
