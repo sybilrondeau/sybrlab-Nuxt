@@ -31,9 +31,10 @@
       "portfolio1":
       {
         "id": "01",
-        "title": "Sybr Lab",
+        "title": "SybR Lab",
         "description": "I like <strong>clean</strong> and smooth websites, where typography and design have an important place. Typography is set on a modular scale based on the Gold number, in reference to my photography career. This is a quite simple one-page that I made without any framework at first, with a Parcel bundle. Then, I migrated the website into Nuxt. Greensock library is powering animation, and i18n internationalization.",
         "image": "sybrlab-650",
+        "alt": "SybR Lab Logo",
         "margin": "0 25.89rem 0 0",
         "creditMakers": ["Vue.js website","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
         "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
@@ -44,6 +45,7 @@
         "title": "WSSA",
         "description": "I did a Front-end work on this <strong>application</strong> that shares competition results of the Word Slalom Skaters Association. Ranks are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
         "image": "wssa-650",
+        "alt": "WSSA Screenshot",
         "margin": "0 0 0 25.89rem",
         "creditMakers": ["Application DrakkR - Nantes", "Web Design : Ambroise Nicolao"],
         "creditTechs": ["Ruby on Rails", "Datatables"]
@@ -54,6 +56,7 @@
         "title": "PhotographR",
         "description": "This is a project made in ten days during Le Wagon bootcamp : a customer relationship management for photographers. Watch it on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project promoter.",
         "image": "photographr-650",
+        "alt": "PhotographR Screenshot",
         "margin": "0 25.89rem 0 0",
         "creditMakers": ["Le Wagon Project", "Team work of 3"],
         "creditTechs": ["Ruby on Rails"]
