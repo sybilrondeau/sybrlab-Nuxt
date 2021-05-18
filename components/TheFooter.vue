@@ -1,98 +1,31 @@
 <template>
-  <footer class="footer">
-    <ul class="footer__links">
-      <li>
-        <a
-          class="body-link"
-          href="https://codepen.io/sybilrondeau"
-          alt="Codepen"
-          rel="noopener noreferrer"
-          target="_blank"
-          aria-label="Codepen de Sybrlab"
-        >
-          <icon-base
-            view-box="0 0 256 256"
-            icon-name="codepen"
-            icon-svg="icon-codepen"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          class="body-link"
-          href="https://www.linkedin.com/in/sybil-rondeau-6ba54312a/"
-          alt="Linkedin"
-          rel="noopener noreferrer"
-          target="_blank"
-          aria-label="Linkekin de Sybil Rondeau"
-        >
-          <icon-base
-            view-box="0 0 22.258 22.258"
-            icon-name="linkedin"
-            icon-svg="icon-linkedin"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          class="body-link"
-          href="https://www.instagram.com/sybil_rondeau"
-          alt="Instagram"
-          rel="noopener noreferrer"
-          target="_blank"
-          aria-label="Instagram de Sybil Rondeau"
-        >
-          <icon-base
-            class="body-link"
-            view-box="0 0 256 256"
-            icon-name="instagram"
-            icon-svg="icon-instagram"
-          />
-        </a>
-      </li>
-      <li>
-        <the-language-switcher class="body-link" />
-      </li>
-    </ul>
-  </footer>
+  <div class="footer">
+    <p class="footer-text">
+      {{ $t('legal') }}
+    </p>
+  </div>
 </template>
 
 <script>
-import IconBase from './IconBase.vue';
-import TheLanguageSwitcher from './TheLanguageSwitcher.vue';
-
-export default {
-  components: {
-    IconBase,
-    TheLanguageSwitcher,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
 .footer {
-  width: auto;
-  position: fixed;
-  left: 0;
-  bottom: 2rem;
-  z-index: 100;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 
-  &__links li {
-    z-index: 100;
-    padding: 0rem 4rem 2rem;
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 
-    @include respond(phone) {
-      display: none;
-    }
+  .footer-text {
+    flex: 0 1 70%;
+    font-size: 1.2rem;
 
-    svg {
-      width: 2rem;
-      height: 2rem;
-      margin-bottom: 4rem;
-    }
-
-    svg:hover {
-      fill: var(--primary);
+    @includes respond(phone) {
+      flex: 0 1 90%;
     }
   }
 }

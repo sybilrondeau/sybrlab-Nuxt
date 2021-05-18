@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+button {
+  background-color: transparent;
+  border: none;
+}
 svg {
   width: 2rem;
   height: 4rem;

@@ -23,100 +23,20 @@
         >
       </p>
     </div>
-    <div>
-      <ul class="cta__social">
-        <li>
-          <a
-            class="body-link"
-            href="https://codepen.io/sybilrondeau"
-            alt="Codepen"
-            rel="noopener noreferrer"
-            target="_blank"
-            aria-label="Codepen de Sybrlab"
-          >
-            <icon-base
-              view-box="0 0 256 256"
-              icon-name="codepen"
-              icon-svg="icon-codepen"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            class="body-link"
-            href="https://www.linkedin.com/in/sybil-rondeau-6ba54312a/"
-            alt="Linkedin"
-            rel="noopener noreferrer"
-            target="_blank"
-            aria-label="Linkekin de Sybil Rondeau"
-          >
-            <icon-base
-              view-box="0 0 22.258 22.258"
-              icon-name="linkedin"
-              icon-svg="icon-linkedin"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            class="body-link"
-            href="https://www.instagram.com/sybil_rondeau"
-            alt="Instagram"
-            rel="noopener noreferrer"
-            target="_blank"
-            aria-label="Instagram de Sybil Rondeau"
-          >
-            <icon-base
-              view-box="0 0 256 256"
-              icon-name="instagram"
-              icon-svg="icon-instagram"
-            />
-          </a>
-        </li>
-        <li>
-          <the-language-switcher class="body-link" />
-        </li>
-      </ul>
-    </div>
-    <p class="cta__legal">
-      {{ $t('legal') }}
-    </p>
   </section>
 </template>
 
-<script>
-import IconBase from '@/components/IconBase.vue';
-
-export default {
-  components: {
-    IconBase,
-  },
-};
-</script>
-
 <style lang="scss" scoped>
 .cta {
+  height: 25rem;
+  margin-bottom: 10rem;
   text-align: center;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: relative;
 
-  &__legal {
-    text-align: center;
-    align-self: end;
-    width: 70%;
-    font-size: 1.2rem;
-
-    @include respond(phone) {
-      width: 90%;
-    }
-  }
-
   &__main {
-    margin-top: 10%;
-    margin-bottom: 20%;
     z-index: 500;
 
     .cta__title {
@@ -139,24 +59,6 @@ export default {
 
     #tel {
       font-size: var(--normal);
-    }
-  }
-
-  &__social {
-    display: none;
-
-    @include respond(phone) {
-      display: flex;
-      margin-bottom: 5rem;
-    }
-
-    li {
-      padding: 0 3rem;
-    }
-
-    svg {
-      width: 2rem;
-      height: 2rem;
     }
   }
 }
