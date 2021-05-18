@@ -1,9 +1,10 @@
 <template>
-  <span class="lang-switcher" aria-label="language switcher">
+  <span class="lang-switcher">
     <nuxt-link
       v-for="locale in showLocales"
       :key="locale.code"
       :to="switchLocalePath(locale.code)"
+      aria-label="language switcher"
     >
       <span
         :class="
