@@ -4,10 +4,9 @@
     :viewBox="viewBox"
     :width="width"
     :height="height"
-    :aria-labelledby="iconName"
     role="img"
   >
-    <title :id="iconName" lang="fr">{{ iconName }} icon</title>
+    <title lang="fr">{{ iconName }} icon</title>
     <component :is="iconSvg" />
   </svg>
 </template>
