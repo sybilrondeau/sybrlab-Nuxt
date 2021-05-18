@@ -18,6 +18,7 @@
           href="tel:+33629426276"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="+ 33. 629. 426. 276"
           >{{ $t('tel') }}</a
         >
       </p>

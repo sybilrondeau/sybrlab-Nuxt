@@ -71,9 +71,10 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  width: 100vw;
+  width: auto;
   position: fixed;
-  bottom: 0;
+  left: 0;
+  bottom: 2rem;
   z-index: 100;
 
   &__links li {
