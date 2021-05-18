@@ -1,7 +1,9 @@
 <template>
   <header id="section1" class="intro">
     <div class="portrait-svg">
-      <base-portrait />
+      <base-portrait
+        aria-label="Portrait dessin en une ligne de Sybil Rondeau"
+      />
     </div>
     <h1>
       {{ $t('siteTitle1') }} Sybil Rondeau,<br /><span class="outline"
