@@ -3,6 +3,9 @@ import fr from '../languages/fr-FR.json';
 
 export const I18N = {
   strategy: 'prefix',
+  detectBrowserLanguage: {
+    useCookie: false,
+  },
   locales: [
     {
       code: 'en',
