@@ -20,20 +20,24 @@
     <transition name="fade">
       <ul v-if="isOpen" class="info__nav">
         <li>
-          <a href="#section2" class="nav-link nav-about">À propos</a>
+          <a href="#section2" class="nav-link nav-about">{{
+            $t('about.title')
+          }}</a>
         </li>
         <li>
-          <a href="#section3" class="nav-link nav-portfolio"
-            >Portfolio</a
-          >
+          <a href="#section3" class="nav-link nav-portfolio">{{
+            $t('portfolio.title')
+          }}</a>
         </li>
         <li>
-          <a href="#section4" class="nav-link nav-skills"
-            >Compétences</a
-          >
+          <a href="#section4" class="nav-link nav-skills">{{
+            $t('competence.title')
+          }}</a>
         </li>
         <li>
-          <a href="#section5" class="nav-link nav-contact">Contact</a>
+          <a href="#section5" class="nav-link nav-contact">{{
+            $t('contact.title')
+          }}</a>
         </li>
       </ul>
     </transition>

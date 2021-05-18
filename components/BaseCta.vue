@@ -116,6 +116,7 @@ export default {
   &__main {
     margin-top: 10%;
     margin-bottom: 20%;
+    z-index: 500;
 
     .cta__title {
       text-align: center;

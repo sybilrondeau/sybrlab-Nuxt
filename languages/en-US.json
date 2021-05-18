@@ -2,52 +2,76 @@
   "siteTitle1": "I am",
   "siteTitle2": "Front-end",
   "siteTitle3": "Developer",
-  "portfolio": {
-    "portfolio1":
-    {
-      "id": "01",
-      "title": "Sybr Lab",
-      "description": "I like <strong>clean</strong> and smooth websites, where typography and design are important. I used a modular scale based on the Gold number, in reference to my photography career. This is a quite simple one-page that I made without any framework at first, with a Parcel bundle. Then, I migrated the website into Nuxt. I used Greensock library for animation.",
-      "image": "sybrlab-650",
-      "margin": "0 25.89rem 0 0",
-      "creditMakersOne": "Vue.js Website",
-      "creditMakersTwo": "Web Design : Sybil Rondeau",
-      "creditMakersThree": "Illustrations : Loeiza Coccolini",
-      "creditTechOne": "Vue.js",
-      "creditTechTwo": "Nuxt",
-      "creditTechThree": "GSAP"
-    },
-    "portfolio2":
-    {
-      "id": "02",
-      "title": "WSSA",
-      "description": "I did a Front-end work on this <strong>application</strong> that shares competition results of the Word Slalom Skaters Association. Ranks are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
-      "image": "wssa-650",
-      "margin": "0 0 0 25.89rem",
-      "creditMakersOne": "Application DrakkR - Nantes",
-      "creditMakersTwo": "Web Design : Ambroise Nicolao",
-      "creditMakersThree": "",
-      "creditTechOne": "Ruby on Rails",
-      "creditTechTwo": "Datatables",
-      "creditTechThree": ""
-    },
-    "portfolio3":
-    {
-      "id": "03",
-      "title": "PhotographR",
-      "description": "This is a project made during the Wagon bootcamp, a customer relationship management for photographers. Watch it on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project promoter.",
-      "image": "photographr-650",
-      "margin": "0 25.89rem 0 0",
-      "creditMakersOne": "Projet du Wagon",
-      "creditMakersTwo": "Work in a team (3)",
-      "creditMakersThree": "",
-      "creditTechOne": "Ruby on Rails",
-      "creditTechTwo": "",
-      "creditTechThree": ""
+  "about": {
+    "title": "About",
+    "paragraphs": {
+      "paragraph1": 
+      {
+        "title": "Expertise",
+        "description": "I am a <strong>Front-end</strong> spécialist with a strong taste for<strong>animation</strong> and <strong>JavaScript</strong>. I took Le Wagon Bootcamp in Nantes, March 2020. ",
+        "svg": "icon-mesure"
+      },
+      "paragraph2": 
+      {
+        "title": "Experience",
+        "description": "I made WordPress websites for the last two years, diving into <strong>performances</strong>, <strong>accessibility</strong>, <strong>security</strong> and <strong>SEO</strong> : good practices essential for longevity and search engine optimization.",
+        "svg": "icon-book"
+      },
+      "paragraph3": 
+      {
+        "title": "History",
+        "description": "What's more, I've been SybR, a documentary family <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong> for more than ten years.<br /> It is my second career, after twelve years as an <b>x-ray tecnician</b> in emergency departments (and night shift !).",
+        "svg": "icon-camera"
+      }
     }
   },
-  "about": "About",
-  "competence": "Skills",
+  "portfolio": {
+    "title": "Portfolio",
+    "portfolioItems": {
+      "portfolio1":
+      {
+        "id": "01",
+        "title": "Sybr Lab",
+        "description": "I like <strong>clean</strong> and smooth websites, where typography and design have an important place. Typography is set on a modular scale based on the Gold number, in reference to my photography career. This is a quite simple one-page that I made without any framework at first, with a Parcel bundle. Then, I migrated the website into Nuxt. Greensock library is powering animation, and i18n internationalization.",
+        "image": "sybrlab-650",
+        "margin": "0 25.89rem 0 0",
+        "creditMakers": ["Vue.js website","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
+        "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
+      },
+      "portfolio2":
+      {
+        "id": "02",
+        "title": "WSSA",
+        "description": "I did a Front-end work on this <strong>application</strong> that shares competition results of the Word Slalom Skaters Association. Ranks are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
+        "image": "wssa-650",
+        "margin": "0 0 0 25.89rem",
+        "creditMakers": ["Application DrakkR - Nantes", "Web Design : Ambroise Nicolao"],
+        "creditTechs": ["Ruby on Rails", "Datatables"]
+      },
+      "portfolio3":
+      {
+        "id": "03",
+        "title": "PhotographR",
+        "description": "This is a project made in ten days during Le Wagon bootcamp : a customer relationship management for photographers. Watch it on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project promoter.",
+        "image": "photographr-650",
+        "margin": "0 25.89rem 0 0",
+        "creditMakers": ["Le Wagon Project", "Team work of 3"],
+        "creditTechs": ["Ruby on Rails"]
+      }
+    }
+  },
+  "competence": {
+    "title": "Skills"
+  },  
+  "contact": {
+    "title": "Contact",
+    "paragraphs": {
+      "paragraph": {
+        "title": "Front-end Developer",
+        "description": "You are a <strong>Company</strong>, a <strong>Start-up</strong>, a <strong>Web Agency</strong> or a <strong>Developer</strong> and you need a Front-end developer :<br />I am available for Front-end <strong>assigments</strong> as a freelancer, and open to <strong>job</strong> offers."
+      }
+    }
+  },
   "tel": "+33 629 426 276",
   "legal": "Site owner: Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hosting: Netlify - Nantes Registration 51273025000069 - TVA FR0A512730250"
 }

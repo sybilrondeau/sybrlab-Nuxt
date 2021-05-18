@@ -2,6 +2,7 @@ import en from '../languages/en-US.json';
 import fr from '../languages/fr-FR.json';
 
 export const I18N = {
+  strategy: 'prefix',
   locales: [
     {
       code: 'en',

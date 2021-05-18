@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio">
     <div
-      v-for="(portfolioItem, index) in $t('portfolio')"
+      v-for="(portfolioItem, index) in $t('portfolio.portfolioItems')"
       :key="index"
       ref="portfolioItems"
       class="portfolio__item"
@@ -25,16 +25,22 @@
       <div class="portfolio__item--credits">
         <div class="credits-makers">
           <ul>
-            <li>{{ portfolioItem.creditMakersOne }}</li>
-            <li>{{ portfolioItem.creditMakersTwo }}</li>
-            <li>{{ portfolioItem.creditMakersThree }}</li>
+            <li
+              v-for="creditMaker in portfolioItem.creditMakers"
+              :key="creditMaker"
+            >
+              {{ creditMaker }}
+            </li>
           </ul>
         </div>
         <div class="credits-tech">
           <ul>
-            <li>{{ portfolioItem.creditTechOne }}</li>
-            <li>{{ portfolioItem.creditTechTwo }}</li>
-            <li>{{ portfolioItem.creditTechThree }}</li>
+            <li
+              v-for="creditTech in portfolioItem.creditTechs"
+              :key="creditTech"
+            >
+              {{ creditTech }}
+            </li>
           </ul>
         </div>
       </div>
@@ -49,15 +55,11 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import IconBase from './IconBase.vue';
-import { portfolio } from '~/assets/js/staticDataPortfolio.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
   components: {
     IconBase,
-  },
-  created() {
-    this.portfolio = portfolio;
   },
   mounted() {
     this.$refs.portfolioItems.forEach((portfolio) => {

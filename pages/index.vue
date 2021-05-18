@@ -4,18 +4,18 @@
     <main>
       <section id="section2" class="about anim-text">
         <h2>
-          <span class="outline">{{ $t('about') }}</span>
+          <span class="outline">{{ $t('about.title') }}</span>
         </h2>
         <div class="paragraphes">
           <base-paragraph
-            v-for="aboutParagraph in aboutParagraphs"
-            :key="aboutParagraph.title"
-            :paragraph="aboutParagraph"
+            v-for="(paragraph, index) in $t('about.paragraphs')"
+            :key="index"
+            :paragraph="paragraph"
           >
             <icon-base
               view-box="0 0 521.78 450.53"
-              :icon-svg="aboutParagraph.svg"
-              :icon-name="aboutParagraph.title"
+              :icon-svg="paragraph.svg"
+              :icon-name="paragraph.title"
             />
           </base-paragraph>
         </div>
@@ -23,27 +23,28 @@
 
       <section id="section3" class="portfolio-section">
         <h2>
-          <span class="outline">Portfolio</span>
+          <span class="outline">{{ $t('portfolio.title') }}</span>
         </h2>
         <base-portfolio />
       </section>
 
       <section id="section4" class="competences-section">
         <h2>
-          <span class="outline">{{ $t('competence') }}</span>
+          <span class="outline">{{ $t('competence.title') }}</span>
         </h2>
         <base-competence />
       </section>
 
       <section id="section5" class="contact-section anim-text">
-        <h2><span class="outline">Contact</span></h2>
+        <h2>
+          <span class="outline">{{ $t('contact.title') }}</span>
+        </h2>
         <div class="paragraphes">
           <base-paragraph
-            v-for="aboutParagraph in contactParagraphs"
-            :key="aboutParagraph.title"
-            :paragraph="aboutParagraph"
-          >
-          </base-paragraph>
+            v-for="(paragraph, index) in $t('contact.paragraphs')"
+            :key="index"
+            :paragraph="paragraph"
+          ></base-paragraph>
         </div>
       </section>
 
@@ -61,7 +62,6 @@ import BaseCta from '@/components/BaseCta.vue';
 import IconBase from '@/components/IconBase.vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-import * as myParagraphs from '../assets/js/staticDataParagraphs.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
@@ -72,10 +72,6 @@ export default {
     BaseCompetence,
     BaseCta,
     IconBase,
-  },
-  created() {
-    this.contactParagraphs = myParagraphs.contactParagraphs;
-    this.aboutParagraphs = myParagraphs.aboutParagraphs;
   },
   mounted() {
     function animSections(sectionItems, trigger, stagger) {
