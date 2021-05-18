@@ -69,10 +69,13 @@ export default {
 
 <style lang="scss" scoped>
 .social-links {
+  width: 6rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: fixed;
-  bottom: 2rem;
+  bottom: 0;
   left: 0;
 
   @include respond(phone) {
@@ -80,23 +83,18 @@ export default {
     width: 100vw;
     background-color: white;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
   }
 
   li {
+    flex: 1 1 25%;
     z-index: 100;
-    padding: 0 4rem 2rem;
 
     @include respond(phone) {
-      height: 2rem;
     }
 
     svg {
       width: 2rem;
       height: 2rem;
-      margin-bottom: 4rem;
     }
 
     svg:hover {
