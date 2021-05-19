@@ -23,8 +23,9 @@ export default {};
   .footer-text {
     flex: 0 1 70%;
     font-size: 1.2rem;
+    text-align: center;
 
-    @includes respond(phone) {
+    @include respond(phone) {
       flex: 0 1 90%;
     }
   }
