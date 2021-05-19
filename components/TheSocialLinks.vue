@@ -88,6 +88,9 @@ export default {
   li {
     flex: 1 1 25%;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include respond(phone) {
     }
