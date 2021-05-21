@@ -8,19 +8,19 @@
       "paragraph1": 
       {
         "title": "Expertise",
-        "description": "I am a <strong>Front-end</strong> specialist with an enthusiasm for<strong>animation</strong> and <strong>JavaScript</strong>, having gained my qualification at Le Wagon Bootcamp in Nantes, in March 2020. ",
+        "description": "I am a <strong>Front-end</strong> specialist with an particular enthusiasm for<strong>animation</strong> and <strong>JavaScript</strong>, having gained my qualification at Le Wagon Bootcamp in Nantes, in March 2020. ",
         "svg": "icon-mesure"
       },
       "paragraph2": 
       {
         "title": "Experience",
-        "description": "I created WordPress websites during two years, which has given me deeper insight into the notions of <strong>performances</strong>, <strong>accessibility</strong>, <strong>security</strong> and <strong>SEO</strong> : this has enabled me to develop a skill-set of essential good practices to implement at the outset of website construction, garanteeing durability and natural search engine optimization.",
+        "description": "I created WordPress websites for two years, which gave me deeper insight into the notions of <strong>performance</strong>, <strong>accessibility</strong>, <strong>security</strong> and <strong>SEO</strong> : this has enabled me to develop a skill-set of essential good practices to implement at the outset of website construction, garanteeing durability and natural search engine optimization.",
         "svg": "icon-book"
       },
       "paragraph3": 
       {
         "title": "Background",
-        "description": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>.<br /> Previously, I had a twelve years career as an emergency department <b>X-ray tecnician</b> (working night shift !).",
+        "description": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>.<br /> Previously, I had a twelve-year career as an emergency department <b>X-ray tecnichian</b> (working night shifts !).",
         "svg": "icon-camera"
       }
     }
