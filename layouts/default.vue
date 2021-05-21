@@ -36,6 +36,9 @@ export default {
       targets: ['a', 'nuxt-link', 'body-link'],
     };
   },
+  head() {
+    return this.$nuxtI18nHead({ addSeoAttributes: true });
+  },
   methods: {
     moveCustomCursor(e) {
       this.top = e.pageY + 'px';

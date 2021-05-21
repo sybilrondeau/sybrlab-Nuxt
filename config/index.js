@@ -2,6 +2,8 @@ import fr from '../languages/fr-FR.json';
 import en from '../languages/en-US.json';
 
 export const I18N = {
+  baseUrl: 'https://sybrlab.com',
+  seo: false,
   strategy: 'prefix',
   detectBrowserLanguage: {
     useCookie: true,
@@ -18,6 +20,7 @@ export const I18N = {
       code: 'fr',
       iso: 'fr-FR',
       name: 'Français',
+      isCatchallLocale: true,
     },
   ],
   defaultLocale: 'fr',
