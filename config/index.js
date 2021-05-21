@@ -1,10 +1,12 @@
-import en from '../languages/en-US.json';
 import fr from '../languages/fr-FR.json';
+import en from '../languages/en-US.json';
 
 export const I18N = {
   strategy: 'prefix',
   detectBrowserLanguage: {
-    useCookie: false,
+    useCookie: true,
+    cookieKey: 'i18n_redirected',
+    onlyOnRoot: true,
   },
   locales: [
     {

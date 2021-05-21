@@ -21,12 +21,12 @@ export default {};
   }
 
   .footer-text {
-    flex: 0 1 70%;
+    flex: 0 1 60%;
     font-size: 1.2rem;
     text-align: center;
 
-    @include respond(phone) {
-      flex: 0 1 90%;
+    @include respond(tab) {
+      flex: 0 1 85%;
     }
   }
 }
