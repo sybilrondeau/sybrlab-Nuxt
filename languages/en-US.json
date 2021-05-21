@@ -8,19 +8,19 @@
       "paragraph1": 
       {
         "title": "Expertise",
-        "description": "I am a <strong>Front-end</strong> spécialist with a strong taste for<strong>animation</strong> and <strong>JavaScript</strong>. I took Le Wagon Bootcamp in Nantes, March 2020. ",
+        "description": "I am a <strong>Front-end</strong> specialist with an enthusiasm for<strong>animation</strong> and <strong>JavaScript</strong>, having gained my qualification at Le Wagon Bootcamp in Nantes, in March 2020. ",
         "svg": "icon-mesure"
       },
       "paragraph2": 
       {
         "title": "Experience",
-        "description": "I made WordPress websites for the last two years, diving into <strong>performances</strong>, <strong>accessibility</strong>, <strong>security</strong> and <strong>SEO</strong> : good practices essential for longevity and search engine optimization.",
+        "description": "I created WordPress websites during two years, which has given me deeper insight into the notions of <strong>performances</strong>, <strong>accessibility</strong>, <strong>security</strong> and <strong>SEO</strong> : this has enabled me to develop a skill-set of essential good practices to implement at the outset of website construction, garanteeing durability and natural search engine optimization.",
         "svg": "icon-book"
       },
       "paragraph3": 
       {
-        "title": "History",
-        "description": "What's more, I've been SybR, a documentary family <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong> for more than ten years.<br /> It is my second career, after twelve years as an <b>x-ray tecnician</b> in emergency departments (and night shift !).",
+        "title": "Background",
+        "description": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>.<br /> Previously, I had a twelve years career as an emergency department <b>X-ray tecnician</b> (working night shift !).",
         "svg": "icon-camera"
       }
     }
@@ -32,7 +32,7 @@
       {
         "id": "01",
         "title": "SybR Lab",
-        "description": "I like <strong>clean</strong> and smooth websites, where typography and design have an important place. Typography is set on a modular scale based on the Gold number, in reference to my photography career. This is a quite simple one-page that I made without any framework at first, with a Parcel bundle. Then, I migrated the website into Nuxt. Greensock library is powering animation, and i18n internationalization.",
+        "description": "I like <strong>clean</strong>, smooth websites, where typography and <strong>design</strong> have an important place. Typography is set on a modular scale based on the Golden ratio, a reference and inspiration derived from my photography career. Here I have developed a quite simple one-page construction that I made without any framework at first, with a <strong>Parcel</strong> bundle. I then migrated the website into <strong>Nuxt</strong>, with <strong>Greensock</strong> library powering animation, and <strong>i18n</strong> providing internationalization.",
         "image": "sybrlab-650",
         "alt": "SybR Lab Logo",
         "margin": "0 25.89rem 0 0",
@@ -43,7 +43,7 @@
       {
         "id": "02",
         "title": "WSSA",
-        "description": "I did a Front-end work on this <strong>application</strong> that shares competition results of the Word Slalom Skaters Association. Ranks are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
+        "description": "I carried out Front-end work on this <strong>application</strong> that presents the competition results of the Word Slalom Skaters Association. Rankings are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
         "image": "wssa-650",
         "alt": "WSSA Screenshot",
         "margin": "0 0 0 25.89rem",
@@ -54,7 +54,7 @@
       {
         "id": "03",
         "title": "PhotographR",
-        "description": "This is a project made in ten days during Le Wagon bootcamp : a customer relationship management for photographers. Watch it on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project promoter.",
+        "description": "This is a project made in ten days during Le Wagon bootcamp : it is a <strong>customer relationship management application</strong> designed for photographers. It can be viewed on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project coordinator.",
         "image": "photographr-650",
         "alt": "PhotographR Screenshot",
         "margin": "0 25.89rem 0 0",
@@ -71,7 +71,7 @@
     "paragraphs": {
       "paragraph": {
         "title": "Front-end Developer",
-        "description": "You are a <strong>Company</strong>, a <strong>Start-up</strong>, a <strong>Web Agency</strong> or a <strong>Developer</strong> and you need a Front-end developer :<br />I am available for Front-end <strong>assigments</strong> as a freelancer, and open to <strong>job</strong> offers."
+        "description": "Are you an established <strong>Company</strong>, a <strong>Startup</strong> business, a <strong>Web Agency</strong> or a <strong>Developer</strong> in need of a Front-end developer ?<br />I am available for short and long-term <strong>assignments</strong> on a freelance basis, as well as being open to offers to <strong>join your team</strong> !"
       }
     }
   },
