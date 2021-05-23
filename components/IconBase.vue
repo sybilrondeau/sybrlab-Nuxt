@@ -28,6 +28,7 @@ import IconLab from './icons/static/IconLab.vue';
 import IconBook from './icons/animate/IconBook.vue';
 import IconCamera from './icons/animate/IconCamera.vue';
 import IconMesure from './icons/animate/IconMesure.vue';
+import IconGithub from './icons/static/IconGithub.vue';
 
 export default {
   components: {
@@ -47,6 +48,7 @@ export default {
     IconBook,
     IconCamera,
     IconMesure,
+    IconGithub,
   },
   props: {
     iconName: {

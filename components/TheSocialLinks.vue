@@ -3,6 +3,22 @@
     <li>
       <a
         class="body-link"
+        href="https://github.com/sybilrondeau"
+        alt="Github"
+        rel="noopener noreferrer"
+        target="_blank"
+        aria-label="Github de Sybrlab"
+      >
+        <icon-base
+          view-box="0 0 256 250"
+          icon-name="github"
+          icon-svg="icon-github"
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        class="body-link"
         href="https://codepen.io/sybilrondeau"
         alt="Codepen"
         rel="noopener noreferrer"
