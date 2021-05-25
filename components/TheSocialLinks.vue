@@ -93,6 +93,7 @@ export default {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 900;
 
   @include respond(phone) {
     height: 4rem;
