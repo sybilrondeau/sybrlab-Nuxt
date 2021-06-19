@@ -19,7 +19,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Developpement front-end et Javascript à Nantes.',
+        content: 'Developpeuse front-end à Nantes.',
       },
       {
         property: 'og:title',
@@ -27,7 +27,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: '@/assets/images/sybrlab-1200.jpg',
+        content: '@/static/sybrlab-1200.jpg',
       },
       {
         property: 'og:image:type',
@@ -47,7 +47,7 @@ export default {
       },
       {
         property: 'twitter:image',
-        content: '@/assets/images/sybrlab-150.jpg',
+        content: '@/static/sybrlab-150.jpg',
       },
     ],
     link: [
