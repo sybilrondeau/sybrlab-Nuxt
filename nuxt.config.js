@@ -27,7 +27,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: '@/static/sybrlab-1200.jpg',
+        content: '/sybrlab-1200.jpg',
       },
       {
         property: 'og:image:type',
@@ -47,7 +47,7 @@ export default {
       },
       {
         property: 'twitter:image',
-        content: '@/static/sybrlab-150.jpg',
+        content: '/sybrlab-150.jpg',
       },
     ],
     link: [
