@@ -27,7 +27,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: '~assets/images/sybrlab-1200.jpg',
+        content: '@/assets/images/sybrlab-1200.jpg',
       },
       {
         property: 'og:image:type',
@@ -47,14 +47,14 @@ export default {
       },
       {
         property: 'twitter:image',
-        content: '~assets/images/sybrlab-150.jpg',
+        content: '@/assets/images/sybrlab-150.jpg',
       },
     ],
     link: [
       {
         rel: 'icon',
-        type: 'image/png',
-        href: 'favicon_lab.png',
+        type: 'image/x-icon',
+        href: '/favicon_lab.png',
       },
       {
         rel: 'stylesheet',
