@@ -1,46 +1,34 @@
 <template>
-  <nav class="info">
-    <div class="info__top">
-      <nuxt-link
-        :to="{ name: 'index' }"
-        class="info__top--logo"
-        aria-label="Logo SybR Lab"
-      >
+  <nav class="nav">
+    <div class="nav__logo">
+      <nuxt-link :to="{ name: 'index' }" aria-label="Logo SybR Lab">
         <icon-base
-          class="logoLab body-link"
+          class="logoLab"
           icon-name="logoLab"
           view-box="0 0 246.06 155.7"
           icon-svg="icon-lab"
         />
       </nuxt-link>
-      <div class="info__top--btn body-link" @click="openNav">
-        <the-nav-bar-button />
-      </div>
     </div>
-    <transition name="fade">
-      <ul v-if="isOpen" class="info__nav">
-        <li>
-          <a href="#section2" class="nav-link nav-about">{{
-            $t('about.title')
-          }}</a>
-        </li>
-        <li>
-          <a href="#section3" class="nav-link nav-portfolio">{{
-            $t('portfolio.title')
-          }}</a>
-        </li>
-        <li>
-          <a href="#section4" class="nav-link nav-skills">{{
-            $t('competence.title')
-          }}</a>
-        </li>
-        <li>
-          <a href="#section5" class="nav-link nav-contact">{{
-            $t('contact.title')
-          }}</a>
-        </li>
-      </ul>
-    </transition>
+    <div class="nav__menu">
+      <nuxt-link
+        :to="{ name: 'apropos' }"
+        class="nav-link nav-about"
+        >{{ $t('about.title') }}</nuxt-link
+      >
+
+      <nuxt-link
+        :to="{ name: 'portfolio' }"
+        class="nav-link nav-portfolio"
+        >{{ $t('portfolio.title') }}</nuxt-link
+      >
+
+      <nuxt-link
+        :to="{ name: 'contact' }"
+        class="nav-link nav-contact"
+        >{{ $t('contact.title') }}</nuxt-link
+      >
+    </div>
   </nav>
 </template>
 
@@ -48,154 +36,69 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin.js';
-import TheNavBarButton from './TheNavBarButton.vue';
 import IconBase from './IconBase.vue';
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
 
 export default {
   components: {
     IconBase,
-    TheNavBarButton,
-  },
-  data() {
-    return {
-      isOpen: false,
-    };
-  },
-  mounted() {
-    const circle = MorphSVGPlugin.convertToPath('.circle');
-    this.navTl = gsap
-      .timeline()
-      .to(circle, { morphSVG: '.close-btn' })
-      .reverse();
-  },
-  methods: {
-    openNav() {
-      // toogle play and reverse on timeline
-      this.navTl.reversed(!this.navTl.reversed());
-      this.isOpen = !this.isOpen;
-
-      // class active on menu items
-      function activeMenu(trigger, end, targets) {
-        ScrollTrigger.create({
-          trigger,
-          start: 'top bottom',
-          end,
-          toggleClass: { targets, className: 'active' },
-        });
-      }
-
-      activeMenu('#section2', 'bottom 20%', '.nav-about');
-      activeMenu('#section3', 'bottom 20%', '.nav-portfolio');
-      activeMenu('#section4', 'bottom 20%', '.nav-skills');
-      activeMenu('#section5', '200% 20%', '.nav-contact');
-    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.info {
+.nav {
   width: 100vw;
+  height: 8rem;
   position: sticky;
   top: 0;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+  background-color: var(--backg);
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    padding: 0rem 4rem;
+  &__logo {
+    flex: 0 1 10%;
+    padding: 2rem 0;
 
-    &--logo {
-      z-index: 100;
-      padding: 2rem 0;
-
-      .logoLab {
-        width: 6rem;
-        height: 4rem;
-
-        @include respond(phone) {
-          width: 4rem;
-          height: 2rem;
-        }
-      }
-
-      .logoLab:hover {
-        fill: var(--primary);
-      }
-    }
-
-    &--btn {
-      z-index: 100;
-      padding: 2rem 0;
+    .logoLab {
+      width: 6rem;
+      height: 4rem;
 
       @include respond(phone) {
-        right: 2rem;
+        width: 4rem;
+        height: 2rem;
       }
     }
 
-    &--btn:hover svg {
+    .logoLab:hover {
       fill: var(--primary);
-      cursor: pointer;
     }
   }
 
-  &__nav {
-    height: 8rem;
-    width: 100%;
+  &__menu {
+    flex: 0 1 90%;
+    padding: 2.5rem 0;
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0rem;
-    background-color: white;
-    z-index: 50;
-
-    @include respond(tabSmall) {
-      flex-direction: column;
-      justify-content: center;
-      height: 28rem;
-      width: 100%;
-    }
-
-    li {
-      padding: 4rem var(--small);
-      font-style: normal;
-      font-weight: 400;
-      text-transform: uppercase;
-      font-size: var(--extra-small);
-
-      @include respond(tabSmall) {
-        padding: var(--small);
-      }
-    }
+    justify-content: flex-end;
 
     .nav-link {
       color: var(--grey-dark);
+      font-style: normal;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: var(--extra-small);
+      padding-left: 4rem;
 
       &.active {
         color: var(--primary);
       }
     }
-
     .nav-link:hover {
       color: var(--primary);
     }
   }
-}
-
-.fade-enter,
-.fade-leave-to {
-  transform: translate3D(0, -10rem, 0);
-
-  @include respond(phone) {
-    transform: translate3D(0, -28rem, 0);
-  }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: transform 1s ease-out;
 }
 </style>

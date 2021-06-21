@@ -1,7 +1,5 @@
 <template>
   <svg
-    id="Calque_2"
-    data-name="Calque 2"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1052.7 1394.45"
   >
@@ -29,4 +27,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+svg {
+  width: 40rem;
+
+  @include respond(phone) {
+    width: 30rem;
+  }
+}
+</style>

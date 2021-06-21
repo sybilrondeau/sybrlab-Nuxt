@@ -1,16 +1,7 @@
 {
-  "siteTitle1": "Je suis",
-  "siteTitle2": "Développeuse",
-  "siteTitle3": "Front-end",
   "about": {
     "title": "À Propos",
     "paragraphs": {
-      "paragraph1": 
-      {
-        "title": "Expertise",
-        "description": "Je suis spécialisée en développement <strong>Front-end</strong> avec une appétence pour <strong>l'animation</strong> et le <strong>JavaScript</strong>, depuis ma certification au Wagon à Nantes en mars 2020.",
-        "svg": "icon-mesure"
-      },
       "paragraph2": 
       {
         "title": "Expérience",
@@ -20,7 +11,7 @@
       "paragraph3": 
       {
         "title": "Parcours",
-        "description": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans.<br /> Ce métier était ma première reconversion, après 12 ans en tant que <b>manipulatrice en radiologie</b> médicale aux urgences (et de nuit !).",
+        "description": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans. Ce métier était ma première reconversion, après 12 ans en tant que <b>manipulatrice en radiologie</b> médicale aux urgences (et de nuit !).",
         "svg": "icon-camera"
       }
     }
@@ -30,7 +21,7 @@
     "portfolioItems": {
       "portfolio1":
       {
-        "id": "01",
+        "id": "03",
         "title": "SybR Lab",
         "description": "J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>. <br />J'ai utilisé une échelle modulaire basée sur le nombre d'Or pour la typographie, en clin d'oeil à ma carrière de photographe. <br />Le site est un One-page simple réalisé d'abord sans framework avec un simple bundler <strong>Parcel</strong>, puis pour sa V3 au sein du framework <strong>Nuxt</strong>. J'utilise la librairie Javascript <strong>Greensock</strong> pour certaines animations, et <strong>i18n</strong> pour le multilingue.",
         "image": "sybrlab-650",
@@ -52,7 +43,7 @@
       },
       "portfolio3":
       {
-        "id": "03",
+        "id": "01",
         "title": "PhotographR",
         "description": "Cette application est le projet de fin de Wagon réalisé en dix jours avec deux autres élèves. Il s'agit d'un <strong>gestionnaire de tâches</strong> pour les photographes qui centralise également toutes les informations clients. Découvrez le sur <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a> présentée par la porteuse de projet Ophélie.",
         "image": "photographr-650",
@@ -62,18 +53,10 @@
         "creditTechs": ["Ruby on Rails"]
       }
     }
-  },
-  "competence": {
-    "title": "Compétences"
-  },  
+  }, 
   "contact": {
     "title": "Contact",
-    "paragraphs": {
-      "paragraph": {
-        "title": "Missions Front-end",
-        "description": "Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une développeuse Front-end ?<br />Je suis disponible pour des <strong>missions</strong> de courte ou longue durée, et à l'écoute des propositions de <strong>postes</strong> dans ce domaine."
-      }
-    }
+    "description": "Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une développeuse Front-end ?<br />Je suis disponible pour des <strong>missions</strong> de courte ou longue durée, et à l'écoute des propositions de <strong>postes</strong> dans ce domaine."
   },
   "tel": "06 29 42 62 76",
   "legal": "Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hébergeur : Netlify - Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250 - Ce site utilise un cookie nécessaire à la détection du language du navigateur."

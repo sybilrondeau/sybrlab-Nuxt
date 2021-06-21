@@ -1,16 +1,7 @@
 {
-  "siteTitle1": "I am",
-  "siteTitle2": "Front-end",
-  "siteTitle3": "Developer",
   "about": {
     "title": "About",
     "paragraphs": {
-      "paragraph1": 
-      {
-        "title": "Expertise",
-        "description": "I am a <strong>Front-end</strong> specialist with an particular enthusiasm for <strong>animation</strong> and <strong>JavaScript</strong>, having gained my qualification at Le Wagon Bootcamp in Nantes, in March 2020. ",
-        "svg": "icon-mesure"
-      },
       "paragraph2": 
       {
         "title": "Experience",
@@ -20,7 +11,7 @@
       "paragraph3": 
       {
         "title": "Background",
-        "description": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>.<br /> Previously, I had a twelve-year career as an emergency department <b>X-ray tecnichian</b> (working night shifts !).",
+        "description": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>. Previously, I had a twelve-year career as an emergency department <b>X-ray tecnichian</b> (working night shifts !).",
         "svg": "icon-camera"
       }
     }
@@ -30,7 +21,7 @@
     "portfolioItems": {
       "portfolio1":
       {
-        "id": "01",
+        "id": "03",
         "title": "SybR Lab",
         "description": "I like <strong>clean</strong>, smooth websites, where typography and <strong>design</strong> have an important place. Typography is set on a modular scale based on the Golden ratio, a reference and inspiration derived from my photography career. Here I have developed a quite simple one-page construction that I made without any framework at first, with a <strong>Parcel</strong> bundle. I then migrated the website into <strong>Nuxt</strong>, with <strong>Greensock</strong> library powering animation, and <strong>i18n</strong> providing internationalization.",
         "image": "sybrlab-650",
@@ -52,7 +43,7 @@
       },
       "portfolio3":
       {
-        "id": "03",
+        "id": "01",
         "title": "PhotographR",
         "description": "This is a project made in ten days during Le Wagon bootcamp : it is a <strong>customer relationship management application</strong> designed for photographers. It can be viewed on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project coordinator.",
         "image": "photographr-650",
@@ -62,18 +53,10 @@
         "creditTechs": ["Ruby on Rails"]
       }
     }
-  },
-  "competence": {
-    "title": "Skills"
-  },  
+  }, 
   "contact": {
     "title": "Contact",
-    "paragraphs": {
-      "paragraph": {
-        "title": "Front-end Developer",
-        "description": "Are you an established <strong>Company</strong>, a <strong>Startup</strong> business, a <strong>Web Agency</strong> or a <strong>Developer</strong> in need of a Front-end developer ?<br />I am available for short and long-term <strong>assignments</strong> on a freelance basis, as well as being open to offers to <strong>join your team</strong> !"
-      }
-    }
+    "description": "Are you an established <strong>Company</strong>, a <strong>Startup</strong> business, a <strong>Web Agency</strong> or a <strong>Developer</strong> in need of a Front-end developer ?<br />I am available for short and long-term <strong>assignments</strong> on a freelance basis, as well as being open to offers to <strong>join your team</strong> !"
   },
   "tel": "+33 629 426 276",
   "legal": "Site owner: Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hosting: Netlify - Nantes Registration 51273025000069 - TVA FR0A512730250 - this website uses a cookie for language detection."

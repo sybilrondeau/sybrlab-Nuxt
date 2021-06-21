@@ -49,22 +49,22 @@ h1 {
   }
 }
 
+// h2 {
+//   font-family: 'Exo', sans-serif;
+//   font-weight: 900;
+//   font-variation-settings: 'wght' 900;
+//   margin: 10rem 0 10rem;
+//   text-transform: uppercase;
+//   text-align: center;
+//   font-size: var(--big);
+
+//   @include respond(phone) {
+//     margin: 20rem 0 10rem;
+//     font-size: var(--normal);
+//   }
+// }
+
 h2 {
-  font-family: 'Exo', sans-serif;
-  font-weight: 900;
-  font-variation-settings: 'wght' 900;
-  margin: 30rem 0 10rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: var(--big);
-
-  @include respond(phone) {
-    margin: 20rem 0 10rem;
-    font-size: var(--normal);
-  }
-}
-
-h3 {
   font-family: 'Exo', sans-serif;
   font-weight: 600;
   font-variation-settings: 'wght' 600;
@@ -105,4 +105,5 @@ a {
   text-decoration: none;
   color: var(--primary);
   font-weight: 800;
+  font-family: 'Muli', sans-serif;
 }

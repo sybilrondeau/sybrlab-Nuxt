@@ -1,7 +1,7 @@
 <template>
   <div ref="ref" class="paragraph">
     <div class="paragraph__title">
-      <h3>{{ paragraph.title }}</h3>
+      <h2>{{ paragraph.title }}</h2>
       <slot></slot>
     </div>
     <div class="paragraph__text">
@@ -26,7 +26,7 @@ export default {
 <style lang="scss" scoped>
 .paragraph {
   flex: 0 1 40rem;
-  margin-bottom: 1rem;
+  margin: 1rem 2rem;
 
   .paragraph__title {
     display: flex;

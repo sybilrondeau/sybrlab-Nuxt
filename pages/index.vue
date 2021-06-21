@@ -1,100 +1,42 @@
 <template>
   <div>
-    <the-header />
-    <main>
-      <section id="section2" class="about anim-text">
-        <h2>
-          <span class="outline">{{ $t('about.title') }}</span>
-        </h2>
-        <div class="paragraphes">
-          <base-paragraph
-            v-for="(paragraph, index) in $t('about.paragraphs')"
-            :key="index"
-            :paragraph="paragraph"
+    <header class="intro">
+      <div class="intro__portrait">
+        <base-portrait
+          aria-label="Portrait dessin en une ligne de Sybil Rondeau"
+        />
+      </div>
+      <div class="intro__contenu">
+        <h1>Bonjour,</h1>
+        <p class="intro__contenu--p">
+          <strong
+            >Je suis Sybil Rondeau, Développeuse Front-end.</strong
           >
-            <icon-base
-              view-box="0 0 521.78 450.53"
-              :icon-svg="paragraph.svg"
-              :icon-name="paragraph.title"
-            />
-          </base-paragraph>
+        </p>
+        <p>
+          Passionnée, déterminée, je suis autodidacte avant de passer
+          la certification du Wagon Nantes en mars 2020. Je me forme
+          activement depuis, notamment sur les frameworks Vue.js et
+          Nuxt.js.
+        </p>
+        <div class="competences">
+          <icon-base icon-svg="icon-sass" />
+          <icon-base icon-svg="icon-vue" />
+          <icon-base icon-svg="icon-nuxt" />
+          <icon-base icon-svg="icon-gsap" />
         </div>
-      </section>
-
-      <section id="section3" class="portfolio-section">
-        <h2>
-          <span class="outline">{{ $t('portfolio.title') }}</span>
-        </h2>
-        <base-portfolio />
-      </section>
-
-      <section id="section4" class="competences-section">
-        <h2>
-          <span class="outline">{{ $t('competence.title') }}</span>
-        </h2>
-        <base-competence />
-      </section>
-
-      <section id="section5" class="contact-section anim-text">
-        <h2>
-          <span class="outline">{{ $t('contact.title') }}</span>
-        </h2>
-        <div class="paragraphes">
-          <base-paragraph
-            v-for="(paragraph, index) in $t('contact.paragraphs')"
-            :key="index"
-            :paragraph="paragraph"
-          ></base-paragraph>
-        </div>
-      </section>
-
-      <base-cta />
-    </main>
+      </div>
+    </header>
   </div>
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader.vue';
-import BaseParagraph from '@/components/BaseParagraph.vue';
-import BasePortfolio from '@/components/BasePortfolio.vue';
-import BaseCompetence from '@/components/BaseCompetence.vue';
-import BaseCta from '@/components/BaseCta.vue';
-import IconBase from '@/components/IconBase.vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
-  components: {
-    TheHeader,
-    BaseParagraph,
-    BasePortfolio,
-    BaseCompetence,
-    BaseCta,
-    IconBase,
-  },
   mounted() {
-    function animSections(sectionItems, trigger, stagger) {
-      gsap.from(sectionItems, {
-        scrollTrigger: {
-          trigger,
-          start: 'top 80%',
-          toggleActions: 'play none none reverse',
-        },
-        y: '4rem',
-        opacity: 0,
-        duration: 1,
-        stagger,
-      });
-    }
-
-    animSections('.about .paragraph', '.about .paragraph', 0.33);
-    animSections(
-      '.contact-section .paragraph',
-      '.contact-section .paragraph',
-      0.33,
-    );
-
     gsap.from('.draw-svg', {
       scrollTrigger: {
         trigger: '.about .paragraph__title',
@@ -109,12 +51,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.about {
-  width: 100%;
-}
-.paragraphes {
+.intro {
+  height: 90vh;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__portrait {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__contenu {
+    flex: 0 1 50%;
+
+    &--p {
+      margin-top: 2rem;
+    }
+
+    p {
+      width: 40rem;
+    }
+  }
+  .competences {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-start;
+
+    svg {
+      filter: grayscale(100%);
+      width: 6rem;
+      height: 6rem;
+      margin-right: 1rem;
+    }
+  }
 }
 </style>

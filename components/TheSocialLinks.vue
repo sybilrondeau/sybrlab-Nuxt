@@ -2,7 +2,6 @@
   <ul class="social-links">
     <li>
       <a
-        class="body-link"
         href="https://github.com/sybilrondeau"
         alt="Github"
         rel="noopener noreferrer"
@@ -18,7 +17,6 @@
     </li>
     <li>
       <a
-        class="body-link"
         href="https://codepen.io/sybilrondeau"
         alt="Codepen"
         rel="noopener noreferrer"
@@ -34,7 +32,6 @@
     </li>
     <li>
       <a
-        class="body-link"
         href="https://www.linkedin.com/in/sybil-rondeau-6ba54312a/"
         alt="Linkedin"
         rel="noopener noreferrer"
@@ -50,7 +47,6 @@
     </li>
     <li>
       <a
-        class="body-link"
         href="https://www.instagram.com/sybil_rondeau"
         alt="Instagram"
         rel="noopener noreferrer"
@@ -58,7 +54,6 @@
         aria-label="Instagram de Sybil Rondeau"
       >
         <icon-base
-          class="body-link"
           view-box="0 0 256 256"
           icon-name="instagram"
           icon-svg="icon-instagram"
@@ -66,7 +61,7 @@
       </a>
     </li>
     <li>
-      <the-language-switcher class="body-link" />
+      <the-language-switcher />
     </li>
   </ul>
 </template>
@@ -94,6 +89,7 @@ export default {
   bottom: 0;
   left: 0;
   z-index: 900;
+  background-color: var(--backg);
 
   @include respond(phone) {
     height: 4rem;

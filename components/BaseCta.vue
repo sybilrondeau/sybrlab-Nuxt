@@ -37,8 +37,6 @@
   position: relative;
 
   &__main {
-    z-index: 500;
-
     .cta__title {
       text-align: center;
       font-size: var(--extra-big);

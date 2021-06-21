@@ -5,48 +5,44 @@
       :key="index"
       ref="portfolioItems"
       class="portfolio__item"
-      :style="{ margin: portfolioItem.margin }"
     >
       <img
         class="portfolio__item--image"
         :alt="portfolioItem.alt"
         :src="require(`~/assets/images/${portfolioItem.image}.jpg`)"
       />
-      <div class="portfolio__item--title">
-        <div class="title-arrow">
-          <h3>{{ portfolioItem.title }}</h3>
-          <icon-base
-            view-box="0 0 100 100"
-            icon-name="arrow"
-            icon-svg="icon-arrow"
-          />
+      <div class="portfolio__item--contenu">
+        <div class="item-title">
+          <div class="title-arrow">
+            <h2>{{ portfolioItem.title }}</h2>
+          </div>
+          <p>{{ portfolioItem.id }}.</p>
         </div>
-        <p>{{ portfolioItem.id }}.</p>
-      </div>
-      <div class="portfolio__item--credits">
-        <div class="credits-makers">
-          <ul>
-            <li
-              v-for="creditMaker in portfolioItem.creditMakers"
-              :key="creditMaker"
-            >
-              {{ creditMaker }}
-            </li>
-          </ul>
+        <div class="item-credits">
+          <div class="credits-makers">
+            <ul>
+              <li
+                v-for="creditMaker in portfolioItem.creditMakers"
+                :key="creditMaker"
+              >
+                {{ creditMaker }}
+              </li>
+            </ul>
+          </div>
+          <div class="credits-tech">
+            <ul>
+              <li
+                v-for="creditTech in portfolioItem.creditTechs"
+                :key="creditTech"
+              >
+                {{ creditTech }}
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="credits-tech">
-          <ul>
-            <li
-              v-for="creditTech in portfolioItem.creditTechs"
-              :key="creditTech"
-            >
-              {{ creditTech }}
-            </li>
-          </ul>
+        <div class="item-description">
+          <p><span v-html="portfolioItem.description"></span></p>
         </div>
-      </div>
-      <div class="portfolio__item--description">
-        <p><span v-html="portfolioItem.description"></span></p>
       </div>
     </div>
   </div>
@@ -55,105 +51,84 @@
 <script>
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-import IconBase from './IconBase.vue';
 gsap.registerPlugin(ScrollTrigger);
 
-export default {
-  components: {
-    IconBase,
-  },
-  mounted() {
-    this.$refs.portfolioItems.forEach((portfolio) => {
-      const portfolioElements = portfolio.querySelectorAll(
-        '.portfolio__item--image, .portfolio__item--title, .portfolio__item--credits, .portfolio__item--description',
-      );
-
-      gsap.from(portfolioElements, {
-        scrollTrigger: {
-          trigger: portfolio,
-          start: 'top 70%',
-          toggleActions: 'play none none reverse',
-        },
-        y: '4rem',
-        opacity: 0,
-        duration: 1,
-        stagger: 0.25,
-      });
-    });
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
 .portfolio {
   width: 100%;
+  margin: 10rem 0 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  @include respond(phone) {
-    width: 100%;
-  }
-
   &__item {
-    max-width: 50rem;
+    max-width: 70%;
+    display: flex;
 
     @include respond(tab) {
       margin: 0 0 10rem !important;
     }
 
     &--image {
-      width: 100%;
+      flex: 0 1 50%;
       height: 30rem;
       object-fit: cover;
       border-radius: 0.5rem;
     }
 
-    &--title {
-      border-top: 2px solid var(--grey-dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 1rem 0 2rem;
-      padding-top: 1rem;
+    &--contenu {
+      flex: 0 1 50%;
+      margin-left: 5rem;
 
-      .title-arrow {
+      .item-title {
+        border-top: 2px solid var(--grey-dark);
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        margin: 1rem 0 2rem;
+        padding-top: 1rem;
+
+        .title-arrow {
+          display: flex;
+          align-items: center;
+        }
+
+        svg {
+          width: 6rem;
+          height: 4rem;
+        }
+
+        a {
+          fill: var(--primary);
+        }
+
+        a:hover svg {
+          animation: arrowScale 1s forwards;
+        }
       }
 
-      svg {
-        width: 6rem;
-        height: 4rem;
-      }
+      .item-credits {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
 
-      a {
-        fill: var(--primary);
-      }
+        li {
+          font-style: italic;
+          color: var(--grey-dark);
+          font-size: var(--extra-small);
+        }
 
-      a:hover svg {
-        animation: arrowScale 1s forwards;
-      }
-    }
+        .credits-makers {
+          padding-right: 1rem;
+        }
 
-    &--credits {
-      margin-bottom: 2rem;
-      display: flex;
-      justify-content: space-between;
-
-      li {
-        font-style: italic;
-        color: var(--grey-dark);
-        font-size: var(--extra-small);
-      }
-
-      .credits-makers {
-        padding-right: 1rem;
-      }
-
-      .credits-tech {
-        text-align: right;
+        .credits-tech {
+          text-align: right;
+        }
       }
     }
   }

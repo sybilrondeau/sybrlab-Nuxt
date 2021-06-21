@@ -12,12 +12,16 @@ export default {};
 
 <style lang="scss" scoped>
 .footer {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  background-color: var(--backg);
+  padding: 1rem;
+  z-index: 100;
 
   @include respond(phone) {
-    margin-bottom: 5rem;
   }
 
   .footer-text {

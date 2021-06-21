@@ -12,28 +12,18 @@
     <the-navBar />
     <Nuxt />
     <the-social-links />
-    <the-footer />
   </div>
 </template>
 
 <script>
-import TheNavBar from '@/components/TheNavBar.vue';
-import TheFooter from '@/components/TheFooter.vue';
-import TheSocialLinks from '@/components/TheSocialLinks.vue';
-
 export default {
-  components: {
-    TheNavBar,
-    TheFooter,
-    TheSocialLinks,
-  },
   data() {
     return {
       top: 0,
       left: 0,
       isHover: false,
       cursorClass: 'cursor',
-      targets: ['a', 'nuxt-link', 'body-link'],
+      targets: ['body-link'],
     };
   },
   head() {
