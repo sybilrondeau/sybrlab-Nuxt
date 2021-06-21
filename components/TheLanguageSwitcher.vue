@@ -5,13 +5,7 @@
       :key="locale.code"
       :to="switchLocalePath(locale.code)"
       aria-label="language switcher"
-    >
-      <span
-        :class="
-          'flag-icon flag-icon-squared flag-icon-' +
-          locale.iso.slice(-2).toLowerCase()
-        "
-      ></span>
+      >{{ locale.code }}
     </nuxt-link>
   </span>
 </template>
@@ -30,9 +24,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.flag-icon {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+.lang-switcher {
+  font-family: 'Exo', sans-serif;
+  font-size: var(--extra-small);
+  //text-transform: uppercase;
+  margin-left: 4rem;
+
+  a {
+    color: var(--grey-dark);
+  }
+
+  a:hover {
+    color: var(--primary);
+  }
 }
 </style>

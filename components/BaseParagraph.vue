@@ -26,7 +26,7 @@ export default {
 <style lang="scss" scoped>
 .paragraph {
   flex: 0 1 40rem;
-  margin: 1rem 2rem;
+  margin: 0 2rem;
 
   .paragraph__title {
     display: flex;
@@ -44,7 +44,7 @@ export default {
   }
 
   .paragraph__text {
-    border-top: 2px solid var(--grey-dark);
+    //border-top: 2px solid var(--grey-dark);
     margin: 1rem 1rem 4rem;
 
     p {

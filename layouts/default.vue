@@ -10,7 +10,9 @@
       target="target"
     ></div>
     <the-navBar />
-    <Nuxt />
+    <div class="main">
+      <Nuxt />
+    </div>
     <the-social-links />
   </div>
 </template>
@@ -49,6 +51,10 @@ export default {
 </script>
 
 <style lang="scss">
+.main {
+  max-width: calc(100% - 16rem);
+  margin: 0 auto;
+}
 .cursor {
   width: 2rem;
   height: 2rem;

@@ -39,16 +39,20 @@ export default {};
 
 <style lang="scss" scoped>
 .contact {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  margin: 5rem auto 0;
+  max-width: 60rem;
+  margin: 5rem auto;
+
+  p {
+    flex: 0 1 100%;
+    max-width: 60rem;
+  }
 
   &__form {
+    flex: 0 1 100%;
+    max-width: 60rem;
     margin-top: 5rem;
 
     &--item {
-      flex: 0 1 100%;
       display: flex;
       flex-direction: column;
       margin-top: 4rem;
@@ -65,7 +69,7 @@ export default {};
       textarea {
         background-color: transparent;
         border: none;
-        border-bottom: 2px solid var(--grey-dark);
+        border-bottom: 1px solid var(--grey-dark);
       }
 
       input[value],

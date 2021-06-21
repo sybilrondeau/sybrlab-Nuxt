@@ -8,7 +8,7 @@
       </div>
       <div class="intro__contenu">
         <h1>Bonjour,</h1>
-        <p class="intro__contenu--p">
+        <p>
           <strong
             >Je suis Sybil Rondeau, Développeuse Front-end.</strong
           >
@@ -52,41 +52,44 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 
   &__portrait {
     flex: 0 1 50%;
     display: flex;
     justify-content: flex-end;
+
+    @include respond(phone) {
+      flex: 0 1 100%;
+    }
   }
 
   &__contenu {
     flex: 0 1 50%;
 
-    &--p {
-      margin-top: 2rem;
+    @include respond(phone) {
+      flex: 0 1 100%;
     }
 
     p {
-      width: 40rem;
+      max-width: 40rem;
     }
-  }
-  .competences {
-    width: 100%;
-    height: 10rem;
-    margin-top: 5rem;
-    display: flex;
-    justify-content: flex-start;
+    .competences {
+      width: 100%;
+      margin: 5rem 0;
+      display: flex;
+      justify-content: flex-start;
 
-    svg {
-      filter: grayscale(100%);
-      width: 6rem;
-      height: 6rem;
-      margin-right: 1rem;
+      svg {
+        filter: grayscale(100%);
+        width: 6rem;
+        height: 6rem;
+        margin-right: 1rem;
+      }
     }
   }
 }

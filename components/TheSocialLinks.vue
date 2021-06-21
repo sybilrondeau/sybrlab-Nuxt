@@ -60,28 +60,17 @@
         />
       </a>
     </li>
-    <li>
-      <the-language-switcher />
-    </li>
   </ul>
 </template>
 
 <script>
-import IconBase from './IconBase.vue';
-import TheLanguageSwitcher from './TheLanguageSwitcher.vue';
-
-export default {
-  components: {
-    IconBase,
-    TheLanguageSwitcher,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
 .social-links {
   width: 6rem;
-  height: 30rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,11 +79,12 @@ export default {
   left: 0;
   z-index: 900;
   background-color: var(--backg);
+  border-right: var(--border);
 
   @include respond(phone) {
-    height: 4rem;
+    height: 5rem;
     width: 100vw;
-    background-color: white;
+    border-top: var(--border);
     flex-direction: row;
   }
 

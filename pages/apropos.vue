@@ -38,17 +38,21 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  width: 100%;
-  height: 90vh;
+  max-width: 128rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .paragraphs {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 10rem auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @include respond(tab) {
+    margin: 5rem auto;
+  }
 }
 </style>
