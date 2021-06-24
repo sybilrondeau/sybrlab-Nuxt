@@ -5,6 +5,7 @@
       :key="locale.code"
       :to="switchLocalePath(locale.code)"
       aria-label="language switcher"
+      class="nav-link"
       >{{ locale.code }}
     </nuxt-link>
   </span>
@@ -23,19 +24,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.lang-switcher {
-  font-family: 'Exo', sans-serif;
-  font-size: var(--extra-small);
-  //text-transform: uppercase;
-  margin-left: 4rem;
-
-  a {
-    color: var(--grey-dark);
-  }
-
-  a:hover {
-    color: var(--primary);
-  }
-}
-</style>
+<style lang="scss" scoped></style>

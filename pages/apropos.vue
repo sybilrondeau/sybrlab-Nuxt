@@ -1,58 +1,61 @@
 <template>
   <section class="about anim-text">
-    <div class="paragraphs">
-      <base-paragraph
-        v-for="(paragraph, index) in $t('about.paragraphs')"
-        :key="index"
-        :paragraph="paragraph"
-      >
-        <icon-base
-          view-box="0 0 521.78 450.53"
-          :icon-svg="paragraph.svg"
-          :icon-name="paragraph.title"
-        />
-      </base-paragraph>
+    <div class="about__item">
+      <div class="about__item--image">
+        <base-image-book />
+      </div>
+      <div class="about__item--content">
+        <h2>{{ $t('about.paragraphs.paragraph1.title') }}</h2>
+        <p v-html="$t('about.paragraphs.paragraph1.description')"></p>
+      </div>
+    </div>
+    <div class="about__item">
+      <div class="about__item--image">
+        <base-image-camera />
+      </div>
+      <div class="about__item--content">
+        <h2>{{ $t('about.paragraphs.paragraph2.title') }}</h2>
+        <p v-html="$t('about.paragraphs.paragraph2.description')"></p>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-gsap.registerPlugin(ScrollTrigger);
-
-export default {
-  mounted() {
-    gsap.from('.draw-svg', {
-      scrollTrigger: {
-        trigger: '.about .paragraph__title',
-        start: 'top 80%',
-        toggleActions: 'play none none reverse',
-      },
-      duration: 6,
-      drawSVG: '50% 50%',
-    });
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
 .about {
-  max-width: 128rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.paragraphs {
-  width: 100%;
-  margin: 10rem auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 5rem 0;
 
-  @include respond(tab) {
-    margin: 5rem auto;
+    &--image {
+      flex: 0 1 100%;
+      display: flex;
+      justify-content: center;
+
+      svg {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+
+    &--content {
+      flex: 0 1 100%;
+
+      h2 {
+        margin: 2rem 0;
+      }
+
+      p {
+        max-width: 60rem;
+      }
+    }
   }
 }
 </style>

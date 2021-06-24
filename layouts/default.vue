@@ -54,6 +54,11 @@ export default {
 .main {
   max-width: calc(100% - 16rem);
   margin: 0 auto;
+  padding: 0 2rem;
+
+  @include respond(phone) {
+    max-width: 100%;
+  }
 }
 .cursor {
   width: 2rem;

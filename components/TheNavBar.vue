@@ -2,34 +2,16 @@
   <nav class="nav">
     <div class="nav__logo">
       <nuxt-link :to="{ name: 'index' }" aria-label="Logo SybR Lab">
-        <icon-base
+        <base-icon
           class="logoLab"
           icon-name="logoLab"
           view-box="0 0 246.06 155.7"
-          icon-svg="icon-lab"
+          icon-svg="base-icon-static-lab"
         />
       </nuxt-link>
     </div>
-    <div class="nav__menu">
-      <nuxt-link
-        :to="{ name: 'apropos' }"
-        class="nav-link nav-about"
-        >{{ $t('about.title') }}</nuxt-link
-      >
-
-      <nuxt-link
-        :to="{ name: 'portfolio' }"
-        class="nav-link nav-portfolio"
-        >{{ $t('portfolio.title') }}</nuxt-link
-      >
-
-      <nuxt-link
-        :to="{ name: 'contact' }"
-        class="nav-link nav-contact"
-        >{{ $t('contact.title') }}</nuxt-link
-      >
-      <the-language-switcher />
-    </div>
+    <base-nav-bar-menu class="nav__menu" />
+    <the-nav-bar-hamburger class="nav__hamburger" />
   </nav>
 </template>
 
@@ -58,6 +40,14 @@ export default {};
 
   @include respond(tab) {
     height: 5rem;
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include respond(phone) {
+      display: inline;
+    }
   }
 
   &__logo {
@@ -98,19 +88,6 @@ export default {};
 
     @include respond(phone) {
       display: none;
-    }
-
-    .nav-link {
-      color: var(--grey-dark);
-      font-family: 'Exo', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      //text-transform: uppercase;
-      font-size: var(--extra-small);
-      padding-left: 4rem;
-    }
-    .nav-link:hover {
-      color: var(--primary);
     }
   }
 }

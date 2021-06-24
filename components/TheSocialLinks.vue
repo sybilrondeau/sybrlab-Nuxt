@@ -8,10 +8,10 @@
         target="_blank"
         aria-label="Github de Sybrlab"
       >
-        <icon-base
+        <base-icon
           view-box="0 0 256 250"
           icon-name="github"
-          icon-svg="icon-github"
+          icon-svg="base-icon-static-github"
         />
       </a>
     </li>
@@ -23,10 +23,10 @@
         target="_blank"
         aria-label="Codepen de Sybrlab"
       >
-        <icon-base
+        <base-icon
           view-box="0 0 256 256"
           icon-name="codepen"
-          icon-svg="icon-codepen"
+          icon-svg="base-icon-static-codepen"
         />
       </a>
     </li>
@@ -38,10 +38,10 @@
         target="_blank"
         aria-label="Linkekin de Sybil Rondeau"
       >
-        <icon-base
+        <base-icon
           view-box="0 0 22.258 22.258"
           icon-name="linkedin"
-          icon-svg="icon-linkedin"
+          icon-svg="base-icon-static-linkedin"
         />
       </a>
     </li>
@@ -53,10 +53,10 @@
         target="_blank"
         aria-label="Instagram de Sybil Rondeau"
       >
-        <icon-base
+        <base-icon
           view-box="0 0 256 256"
           icon-name="instagram"
-          icon-svg="icon-instagram"
+          icon-svg="base-icon-static-instagram"
         />
       </a>
     </li>
@@ -84,6 +84,7 @@ export default {};
   @include respond(phone) {
     height: 5rem;
     width: 100vw;
+    border-right: none;
     border-top: var(--border);
     flex-direction: row;
   }

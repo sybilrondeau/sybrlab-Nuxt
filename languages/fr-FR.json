@@ -1,38 +1,32 @@
 {
+  "intro": {
+    "paragraph1": "Bonjour",
+    "paragraph2": "Je suis Sybil Rondeau, Développeuse Front-end.",
+    "paragraph3": "Passionnée, déterminée, je suis autodidacte avant de passer la certification du Wagon Nantes en mars 2020. Je me forme en continu depuis, notamment sur les frameworks Vue.js et Nuxt.js." 
+  },
   "about": {
     "title": "À Propos",
     "paragraphs": {
-      "paragraph2": 
+      "paragraph1": 
       {
         "title": "Expérience",
         "description": "J'ai réalisé des sites WordPress pendant 2 ans. Cela m'a permis de m'intéresser aux notions de <strong>performances</strong>, <strong>accessibilité</strong>, <strong>sécurité</strong> et <strong>SEO</strong> : Un ensemble de bonnes pratiques à implémenter dès la construction d'un site, indispensable à sa longévité et une base solide à un référencement naturel de qualité.",
-        "svg": "icon-book"
+        "svg": "base-icon-animate-book"
       },
-      "paragraph3": 
+      "paragraph2": 
       {
         "title": "Parcours",
         "description": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans. Ce métier était ma première reconversion, après 12 ans en tant que <b>manipulatrice en radiologie</b> médicale aux urgences (et de nuit !).",
-        "svg": "icon-camera"
+        "svg": "base-icon-animate-camera"
       }
     }
   },
   "portfolio": {
     "title": "Portfolio",
     "portfolioItems": {
-      "portfolio1":
+      "portfolio3":
       {
         "id": "03",
-        "title": "SybR Lab",
-        "description": "J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>. <br />J'ai utilisé une échelle modulaire basée sur le nombre d'Or pour la typographie, en clin d'oeil à ma carrière de photographe. <br />Le site est un One-page simple réalisé d'abord sans framework avec un simple bundler <strong>Parcel</strong>, puis pour sa V3 au sein du framework <strong>Nuxt</strong>. J'utilise la librairie Javascript <strong>Greensock</strong> pour certaines animations, et <strong>i18n</strong> pour le multilingue.",
-        "image": "sybrlab-650",
-        "alt": "Logo SybR Lab",
-        "margin": "0 25.89rem 0 0",
-        "creditMakers": ["Site Vue.js","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
-        "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
-      },
-      "portfolio2":
-      {
-        "id": "02",
         "title": "WSSA",
         "description": "Un travail d’implémentation du Front-end pour une <strong>application</strong> qui recense les résultats des compétitions de la World Slalom Skaters Association. Le palmarès est affiché par des tables gérées par le plugin Datatables en Javascript dans le framework <strong>Ruby on Rails</strong>.",
         "image": "wssa-650",
@@ -41,7 +35,18 @@
         "creditMakers": ["Application DrakkR - Nantes", "Web Design : Ambroise Nicolao"],
         "creditTechs": ["Ruby on Rails", "Datatables"]
       },
-      "portfolio3":
+      "portfolio2":
+      {
+        "id": "02",
+        "title": "SybR Lab",
+        "description": "J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>. J'utilise la librairie Javascript <strong>Greensock</strong> pour certaines animations, et <strong>i18n</strong> pour le multilingue.",
+        "image": "sybrlab-650",
+        "alt": "Logo SybR Lab",
+        "margin": "0 25.89rem 0 0",
+        "creditMakers": ["Site Vue.js","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
+        "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
+      },
+      "portfolio1":
       {
         "id": "01",
         "title": "PhotographR",
@@ -56,8 +61,14 @@
   }, 
   "contact": {
     "title": "Contact",
-    "description": "Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une développeuse Front-end ?<br />Je suis disponible pour des <strong>missions</strong> de courte ou longue durée, et à l'écoute des propositions de <strong>postes</strong> dans ce domaine."
+    "description": "Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une développeuse Front-end ?<br />Je suis disponible pour des <strong>missions</strong> de courte ou longue durée, et à l'écoute des propositions de <strong>postes</strong> dans ce domaine.",
+    "form1": "Nom - Entreprise"
   },
   "tel": "06 29 42 62 76",
-  "legal": "Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hébergeur : Netlify - Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250 - Ce site utilise un cookie nécessaire à la détection du language du navigateur."
+  "legal": {
+    "legal1": "Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300 Nantes",
+     "legal2": "Hébergeur : Netlify",
+     "legal3": "Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250",
+     "legal4": "Ce site utilise un cookie nécessaire à la détection du language du navigateur."
+  }
 }

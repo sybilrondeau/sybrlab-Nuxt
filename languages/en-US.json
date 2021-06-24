@@ -1,38 +1,32 @@
 {
+  "intro": {
+    "paragraph1": "Hello",
+    "paragraph2": "I am Sybil Rondeau, Front-end developer.",
+    "paragraph3": "Passionnée, déterminée, je suis autodidacte avant de passer la certification du Wagon Nantes en mars 2020. Je me forme en continu depuis pour développer un code propre et lisible. J'aime particulièrement les frameworks Vue.js et Nuxt.js, et la librairie Greensock pour les animations." 
+  },
   "about": {
     "title": "About",
     "paragraphs": {
-      "paragraph2": 
+      "paragraph1": 
       {
         "title": "Experience",
         "description": "I created WordPress websites for two years, which gave me deeper insight into the notions of <strong>performance</strong>, <strong>accessibility</strong>, <strong>security</strong> and <strong>SEO</strong> : this has enabled me to develop a skill-set of essential good practices to implement at the outset of website construction, garanteeing durability and natural search engine optimization.",
-        "svg": "icon-book"
+        "svg": "base-icon-animate-book"
       },
-      "paragraph3": 
+      "paragraph2": 
       {
         "title": "Background",
         "description": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>. Previously, I had a twelve-year career as an emergency department <b>X-ray tecnichian</b> (working night shifts !).",
-        "svg": "icon-camera"
+        "svg": "base-icon-animate-camera"
       }
     }
   },
   "portfolio": {
     "title": "Portfolio",
     "portfolioItems": {
-      "portfolio1":
+      "portfolio3":
       {
         "id": "03",
-        "title": "SybR Lab",
-        "description": "I like <strong>clean</strong>, smooth websites, where typography and <strong>design</strong> have an important place. Typography is set on a modular scale based on the Golden ratio, a reference and inspiration derived from my photography career. Here I have developed a quite simple one-page construction that I made without any framework at first, with a <strong>Parcel</strong> bundle. I then migrated the website into <strong>Nuxt</strong>, with <strong>Greensock</strong> library powering animation, and <strong>i18n</strong> providing internationalization.",
-        "image": "sybrlab-650",
-        "alt": "SybR Lab Logo",
-        "margin": "0 25.89rem 0 0",
-        "creditMakers": ["Vue.js website","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
-        "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
-      },
-      "portfolio2":
-      {
-        "id": "02",
         "title": "WSSA",
         "description": "I carried out Front-end work on this <strong>application</strong> that presents the competition results of the Word Slalom Skaters Association. Rankings are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
         "image": "wssa-650",
@@ -41,11 +35,22 @@
         "creditMakers": ["Application DrakkR - Nantes", "Web Design : Ambroise Nicolao"],
         "creditTechs": ["Ruby on Rails", "Datatables"]
       },
-      "portfolio3":
+      "portfolio2":
+      {
+        "id": "02",
+        "title": "SybR Lab",
+        "description": "I like <strong>clean</strong>, smooth websites, where typography and <strong>design</strong> have an important place. Here I have developed a quite simple one-page construction that I made without any framework at first, with a <strong>Parcel</strong> bundle. I then migrated the website into <strong>Nuxt</strong>, with <strong>Greensock</strong> library powering animation, and <strong>i18n</strong> providing internationalization.",
+        "image": "sybrlab-650",
+        "alt": "SybR Lab Logo",
+        "margin": "0 25.89rem 0 0",
+        "creditMakers": ["Vue.js website","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
+        "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
+      },
+      "portfolio1":
       {
         "id": "01",
         "title": "PhotographR",
-        "description": "This is a project made in ten days during Le Wagon bootcamp : it is a <strong>customer relationship management application</strong> designed for photographers. It can be viewed on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project coordinator.",
+        "description": "This is a project made in ten days during Le Wagon bootcamp : it is a customer relationship management <strong>application</strong> designed for photographers. It can be viewed on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project coordinator.",
         "image": "photographr-650",
         "alt": "PhotographR Screenshot",
         "margin": "0 25.89rem 0 0",
@@ -56,7 +61,8 @@
   }, 
   "contact": {
     "title": "Contact",
-    "description": "Are you an established <strong>Company</strong>, a <strong>Startup</strong> business, a <strong>Web Agency</strong> or a <strong>Developer</strong> in need of a Front-end developer ?<br />I am available for short and long-term <strong>assignments</strong> on a freelance basis, as well as being open to offers to <strong>join your team</strong> !"
+    "description": "Are you an established <strong>Company</strong>, a <strong>Startup</strong> business, a <strong>Web Agency</strong> or a <strong>Developer</strong> in need of a Front-end developer ?<br />I am available for short and long-term <strong>assignments</strong> on a freelance basis, as well as being open to offers to <strong>join your team</strong> !",
+    "form1": "Name - Company"
   },
   "tel": "+33 629 426 276",
   "legal": "Site owner: Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hosting: Netlify - Nantes Registration 51273025000069 - TVA FR0A512730250 - this website uses a cookie for language detection."

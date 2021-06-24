@@ -44,7 +44,9 @@
             </div>
           </div>
           <div class="item-description">
-            <p><span v-html="portfolioItem.description"></span></p>
+            <p>
+              <span v-html="portfolioItem.description"></span>
+            </p>
           </div>
         </div>
       </div>
@@ -60,72 +62,82 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.portfolio {
-  margin: 10rem 0;
-  display: grid;
-  grid-template-rows: fit-content(100%);
-  grid-template-columns: repeat(2, minmax(30rem, 1fr));
-  grid-auto-rows: fit-content(100%);
-  grid-gap: 40px;
+.portfolio-section {
+  margin: 5rem auto;
 
-  &__item {
-    flex: 0 1 40rem;
-    margin: 0 2rem;
-    @include respond(tab) {
-    }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    &--image {
-      width: 100%;
-      height: 30rem;
-      object-fit: cover;
-      border-radius: 0.5rem;
-    }
+    &__item {
+      border: var(--border);
+      flex: 0 1 40rem;
+      margin: 2rem;
 
-    &--contenu {
-      .item-title {
-        //border-top: 2px solid var(--grey-dark);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1rem 0 2rem;
-        padding-top: 1rem;
-
-        .title-arrow {
-          display: flex;
-          align-items: center;
-        }
-
-        svg {
-          width: 6rem;
-          height: 4rem;
-        }
-
-        a {
-          fill: var(--primary);
-        }
-
-        a:hover svg {
-          animation: arrowScale 1s forwards;
-        }
+      @include respond(phone) {
+        margin: 2rem 0;
       }
 
-      .item-credits {
-        margin-bottom: 2rem;
-        display: flex;
-        justify-content: space-between;
+      &--image {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
 
-        li {
-          font-style: italic;
-          color: var(--grey-dark);
+      &--contenu {
+        padding: 2rem;
+
+        p {
           font-size: var(--extra-small);
         }
 
-        .credits-makers {
-          padding-right: 1rem;
+        .item-title {
+          //border-top: 2px solid var(--grey-dark);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2rem;
+          //padding-top: 1rem;
+
+          .title-arrow {
+            display: flex;
+            align-items: center;
+          }
+
+          svg {
+            width: 6rem;
+            height: 4rem;
+          }
+
+          a {
+            fill: var(--primary);
+          }
+
+          a:hover svg {
+            animation: arrowScale 1s forwards;
+          }
         }
 
-        .credits-tech {
-          text-align: right;
+        .item-credits {
+          margin-bottom: 2rem;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            font-style: italic;
+            color: var(--grey-dark);
+            font-size: 1.2rem;
+          }
+
+          .credits-makers {
+            padding-right: 1rem;
+          }
+
+          .credits-tech {
+            text-align: right;
+          }
         }
       }
     }

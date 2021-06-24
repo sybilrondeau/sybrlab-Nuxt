@@ -2,28 +2,23 @@
   <div>
     <header class="intro">
       <div class="intro__portrait">
-        <base-portrait
+        <base-image-portrait
           aria-label="Portrait dessin en une ligne de Sybil Rondeau"
         />
       </div>
       <div class="intro__contenu">
-        <h1>Bonjour,</h1>
+        <h1>{{ $t('intro.paragraph1') }},</h1>
         <p>
-          <strong
-            >Je suis Sybil Rondeau, Développeuse Front-end.</strong
-          >
+          <strong>{{ $t('intro.paragraph2') }}</strong>
         </p>
         <p>
-          Passionnée, déterminée, je suis autodidacte avant de passer
-          la certification du Wagon Nantes en mars 2020. Je me forme
-          activement depuis, notamment sur les frameworks Vue.js et
-          Nuxt.js.
+          {{ $t('intro.paragraph3') }}
         </p>
         <div class="competences">
-          <icon-base icon-svg="icon-sass" />
-          <icon-base icon-svg="icon-vue" />
-          <icon-base icon-svg="icon-nuxt" />
-          <icon-base icon-svg="icon-gsap" />
+          <base-icon icon-svg="base-icon-static-sass" />
+          <base-icon icon-svg="base-icon-static-vue" />
+          <base-icon icon-svg="base-icon-static-nuxt" />
+          <base-icon icon-svg="base-icon-static-gsap" />
         </div>
       </div>
     </header>
@@ -31,23 +26,7 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-gsap.registerPlugin(ScrollTrigger);
-
-export default {
-  mounted() {
-    gsap.from('.draw-svg', {
-      scrollTrigger: {
-        trigger: '.about .paragraph__title',
-        start: 'top 80%',
-        toggleActions: 'play none none reverse',
-      },
-      duration: 6,
-      drawSVG: '50% 50%',
-    });
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -56,33 +35,42 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 
   &__portrait {
     flex: 0 1 50%;
     display: flex;
     justify-content: flex-end;
 
-    @include respond(phone) {
-      flex: 0 1 100%;
-    }
+    // @include respond(phone) {
+    //   flex: 0 1 100%;
+    // }
   }
 
   &__contenu {
     flex: 0 1 50%;
 
-    @include respond(phone) {
+    @include respond(tab) {
       flex: 0 1 100%;
     }
 
-    p {
+    p,
+    h1 {
       max-width: 40rem;
+
+      @include respond(tab) {
+        margin: 0 auto;
+      }
     }
     .competences {
       width: 100%;
-      margin: 5rem 0;
+      margin: 5rem auto;
       display: flex;
       justify-content: flex-start;
+
+      @include respond(tab) {
+        justify-content: center;
+      }
 
       svg {
         filter: grayscale(100%);
