@@ -1,5 +1,6 @@
 <template>
-  <section class="contact anim-text">
+  <section class="contact">
+    <h1>Contactez-moi !</h1>
     <p v-html="$t('contact.description')"></p>
     <form
       method="post"
@@ -75,7 +76,7 @@
           class="label-legal"
           :class="{ error: $v.isChecked.$error }"
           >En cochant cette case, j'accepte la
-          <nuxt-link :to="{ name: 'legal' }"
+          <nuxt-link :to="{ name: 'legal' }" class="body-link"
             >politique de confidentialité.</nuxt-link
           ></label
         >

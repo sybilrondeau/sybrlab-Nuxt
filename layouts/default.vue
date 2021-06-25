@@ -56,6 +56,10 @@ export default {
   margin: 0 auto;
   padding: 0 2rem;
 
+  @include respond(tab) {
+    max-width: 80%;
+  }
+
   @include respond(phone) {
     max-width: 100%;
   }

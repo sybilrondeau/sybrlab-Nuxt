@@ -1,28 +1,14 @@
 {
   "intro": {
-    "paragraph1": "Bonjour",
-    "paragraph2": "Je suis Sybil Rondeau, Développeuse Front-end.",
-    "paragraph3": "Passionnée, déterminée, je suis autodidacte avant de passer la certification du Wagon Nantes en mars 2020. Je me forme en continu depuis, notamment sur les frameworks Vue.js et Nuxt.js." 
-  },
-  "about": {
-    "title": "À Propos",
-    "paragraphs": {
-      "paragraph1": 
-      {
-        "title": "Expérience",
-        "description": "J'ai réalisé des sites WordPress pendant 2 ans. Cela m'a permis de m'intéresser aux notions de <strong>performances</strong>, <strong>accessibilité</strong>, <strong>sécurité</strong> et <strong>SEO</strong> : Un ensemble de bonnes pratiques à implémenter dès la construction d'un site, indispensable à sa longévité et une base solide à un référencement naturel de qualité.",
-        "svg": "base-icon-animate-book"
-      },
-      "paragraph2": 
-      {
-        "title": "Parcours",
-        "description": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans. Ce métier était ma première reconversion, après 12 ans en tant que <b>manipulatrice en radiologie</b> médicale aux urgences (et de nuit !).",
-        "svg": "base-icon-animate-camera"
-      }
-    }
+    "title": "Bonjour",
+    "subtitle": "Je suis Sybil Rondeau, Développeuse Front-end.",
+    "paragraph2": "Passionnée, déterminée, je suis autodidacte avant de passer la certification du Wagon Nantes en mars 2020. Je me forme en continu depuis, notamment sur les frameworks Vue.js et Nuxt.js.",
+    "paragraph3": "J'ai réalisé des sites WordPress pendant 2 ans. Cela m'a permis de m'intéresser aux notions de performances, accessibilité, sécurité et SEO : Un ensemble de bonnes pratiques à implémenter dès la construction d'un site, indispensable à sa longévité et une base solide à un référencement naturel de qualité.",
+    "paragraph4": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans. Ce métier était ma première reconversion, après 12 ans en tant que manipulatrice en radiologie médicale aux urgences (et de nuit !)."  
   },
   "portfolio": {
-    "title": "Portfolio",
+    "paragraph1": "Développement fullstack sur Ruby on Rails pendant le bootcamp du Wagon, une courte mission de front-end pour l'agence DrakkR à Nantes et mon portfolio avec Vue.js - Nuxt.js.",
+    "paragraph2": "J'expérimente aussi sur <a href=\"https://codepen.io/sybilrondeau\" class=\"body-link\">Codepen</a>.",
     "portfolioItems": {
       "portfolio3":
       {
@@ -39,7 +25,7 @@
       {
         "id": "02",
         "title": "SybR Lab",
-        "description": "J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>. J'utilise la librairie Javascript <strong>Greensock</strong> pour certaines animations, et <strong>i18n</strong> pour le multilingue.",
+        "description": "J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>. Le site est construit avec Vue.js - Nuxt.js. J'utilise la librairie Javascript <strong>Greensock</strong> pour certaines animations, <strong>i18n</strong> pour le multilingue, <strong>Vuelidate</strong> pour le formulaire de contact.",
         "image": "sybrlab-650",
         "alt": "Logo SybR Lab",
         "margin": "0 25.89rem 0 0",
@@ -66,9 +52,11 @@
   },
   "tel": "06 29 42 62 76",
   "legal": {
+    "title": "Mentions Légales",
     "legal1": "Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300 Nantes",
      "legal2": "Hébergeur : Netlify",
      "legal3": "Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250",
-     "legal4": "Ce site utilise un cookie nécessaire à la détection du language du navigateur."
+     "legal4": "Ce site utilise un cookie nécessaire à la détection du language du navigateur.",
+     "legal5": "Par l'intermédiaire du formulaire de contact, je récolte votre nom et votre adresse email uniquement dans le but de traiter votre demande."
   }
 }

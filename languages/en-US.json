@@ -1,28 +1,15 @@
 {
   "intro": {
-    "paragraph1": "Hello",
-    "paragraph2": "I am Sybil Rondeau, Front-end developer.",
-    "paragraph3": "Passionnée, déterminée, je suis autodidacte avant de passer la certification du Wagon Nantes en mars 2020. Je me forme en continu depuis pour développer un code propre et lisible. J'aime particulièrement les frameworks Vue.js et Nuxt.js, et la librairie Greensock pour les animations." 
-  },
-  "about": {
-    "title": "About",
-    "paragraphs": {
-      "paragraph1": 
-      {
-        "title": "Experience",
-        "description": "I created WordPress websites for two years, which gave me deeper insight into the notions of <strong>performance</strong>, <strong>accessibility</strong>, <strong>security</strong> and <strong>SEO</strong> : this has enabled me to develop a skill-set of essential good practices to implement at the outset of website construction, garanteeing durability and natural search engine optimization.",
-        "svg": "base-icon-animate-book"
-      },
-      "paragraph2": 
-      {
-        "title": "Background",
-        "description": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>. Previously, I had a twelve-year career as an emergency department <b>X-ray tecnichian</b> (working night shifts !).",
-        "svg": "base-icon-animate-camera"
-      }
-    }
+    "title": "Hello",
+    "subtitle": "I am Sybil Rondeau, Front-end developer.",
+    "paragraph2": "Passionate with iron will, I was an autodidact before I took Le Wagon certification in March 2020. I am eager for learning, lately on Vue.js and Nuxt.js frameworks.",
+    "paragraph3": "I created WordPress websites for two years, which gave me deeper insight into the notions of performance, accessibility, security and SEO : this has enabled me to develop a skill-set of essential good practices to implement at the outset of website construction, garanteeing durability and natural search engine optimization.",
+    "paragraph4": "For over a decade now, I have also been working under the name SybR, as a family documentary <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographer</a></strong>. Previously, I had a twelve-year career as an emergency department X-ray tecnichian (working night shifts !)."
+
   },
   "portfolio": {
-    "title": "Portfolio",
+    "paragraph1": "Development on Ruby on Rails during Le Wagon Bootcamp, one assigment for DrakkR agency in Nantes and personal portfolio in Vue.js - Nuxt.js.",
+    "paragraph2": "I also experiment with <a href=\"https://codepen.io/sybilrondeau\" class=\"body-link\">Codepen</a>.",
     "portfolioItems": {
       "portfolio3":
       {
@@ -39,7 +26,7 @@
       {
         "id": "02",
         "title": "SybR Lab",
-        "description": "I like <strong>clean</strong>, smooth websites, where typography and <strong>design</strong> have an important place. Here I have developed a quite simple one-page construction that I made without any framework at first, with a <strong>Parcel</strong> bundle. I then migrated the website into <strong>Nuxt</strong>, with <strong>Greensock</strong> library powering animation, and <strong>i18n</strong> providing internationalization.",
+        "description": "I like <strong>clean</strong>, smooth websites, where typography and <strong>design</strong> have an important place. This website is made with Vue.js - Nuxt.js, with <strong>Greensock</strong> library powering animation, <strong>i18n</strong> providing internationalization and <strong>Vuelidate</strong> for the contact form.",
         "image": "sybrlab-650",
         "alt": "SybR Lab Logo",
         "margin": "0 25.89rem 0 0",
@@ -65,5 +52,12 @@
     "form1": "Name - Company"
   },
   "tel": "+33 629 426 276",
-  "legal": "Site owner: Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hosting: Netlify - Nantes Registration 51273025000069 - TVA FR0A512730250 - this website uses a cookie for language detection."
+  "legal": {
+    "title": "Terms and Privacy",
+    "legal1": "Site owner: Sybil Rondeau 43G rue Georges Lafont 44300 Nantes",
+     "legal2": "Hosting: Netlify",
+     "legal3": "Nantes Registration 51273025000069 - TVA FR0A512730250",
+     "legal4": "this website uses a cookie for language detection.",
+     "legal5": "I take your name and email address via the contact form just to be able to give you a response."
+  }
 }

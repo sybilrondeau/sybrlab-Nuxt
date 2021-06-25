@@ -1,16 +1,12 @@
 <template>
   <div>
-    <nuxt-link :to="{ name: 'apropos' }" class="nav-link">{{
-      $t('about.title')
-    }}</nuxt-link>
+    <nuxt-link :to="{ name: 'portfolio' }" class="nav-link">
+      Portfolio</nuxt-link
+    >
 
-    <nuxt-link :to="{ name: 'portfolio' }" class="nav-link">{{
-      $t('portfolio.title')
-    }}</nuxt-link>
-
-    <nuxt-link :to="{ name: 'contact' }" class="nav-link">{{
-      $t('contact.title')
-    }}</nuxt-link>
+    <nuxt-link :to="{ name: 'contact' }" class="nav-link"
+      >Contact</nuxt-link
+    >
     <the-language-switcher />
   </div>
 </template>

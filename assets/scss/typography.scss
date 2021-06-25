@@ -43,6 +43,7 @@ h1 {
   font-weight: 900;
   font-variation-settings: 'wght' 900;
   font-size: var(--extra-big);
+  margin-bottom: 5rem;
 
   @include respond(phone) {
     font-size: var(--big);
@@ -70,7 +71,7 @@ p {
   hyphens: none;
   color: var(--grey-dark);
   line-height: 1.618;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 strong,

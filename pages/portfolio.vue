@@ -1,5 +1,14 @@
 <template>
   <section class="portfolio-section">
+    <div class="title-container">
+      <h1>Portfolio</h1>
+      <base-image-book />
+    </div>
+    <p>
+      {{ $t('portfolio.paragraph1') }}<br /><span
+        v-html="$t('portfolio.paragraph2')"
+      ></span>
+    </p>
     <div class="portfolio">
       <div
         v-for="(portfolioItem, index) in $t(
@@ -54,26 +63,42 @@
   </section>
 </template>
 
-<script>
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-gsap.registerPlugin(ScrollTrigger);
-export default {};
-</script>
-
 <style lang="scss" scoped>
 .portfolio-section {
-  margin: 5rem auto;
+  margin: 5rem 0 5rem 6rem;
+
+  @include respond(phone) {
+    margin: 5rem 0;
+  }
+  .title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    svg {
+      width: 8rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+  }
+  p {
+    max-width: 60rem;
+  }
 
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 5rem;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
 
     &__item {
       border: var(--border);
-      flex: 0 1 40rem;
-      margin: 2rem;
+      flex: 0 0 40rem;
+      margin: 2rem 2rem 0 0;
 
       @include respond(phone) {
         margin: 2rem 0;

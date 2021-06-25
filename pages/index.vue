@@ -1,76 +1,92 @@
 <template>
-  <div>
-    <header class="intro">
-      <div class="intro__portrait">
+  <header class="intro">
+    <div class="intro__content-01">
+      <div class="intro-portrait">
         <base-image-portrait
           aria-label="Portrait dessin en une ligne de Sybil Rondeau"
         />
       </div>
-      <div class="intro__contenu">
-        <h1>{{ $t('intro.paragraph1') }},</h1>
-        <p>
-          <strong>{{ $t('intro.paragraph2') }}</strong>
-        </p>
-        <p>
-          {{ $t('intro.paragraph3') }}
-        </p>
-        <div class="competences">
-          <base-icon icon-svg="base-icon-static-sass" />
-          <base-icon icon-svg="base-icon-static-vue" />
-          <base-icon icon-svg="base-icon-static-nuxt" />
-          <base-icon icon-svg="base-icon-static-gsap" />
-        </div>
+      <div class="intro-titles">
+        <span id="hello">{{ $t('intro.title') }},</span>
+        <h1 id="site-title">{{ $t('intro.subtitle') }}</h1>
       </div>
-    </header>
-  </div>
-</template>
+    </div>
+    <div class="intro__content-02">
+      <p>
+        {{ $t('intro.paragraph2') }}
+      </p>
+      <p>{{ $t('intro.paragraph3') }}</p>
 
-<script>
-export default {};
-</script>
+      <p v-html="$t('intro.paragraph4')"></p>
+      <div class="competences">
+        <base-icon icon-svg="base-icon-static-sass" />
+        <base-icon icon-svg="base-icon-static-vue" />
+        <base-icon icon-svg="base-icon-static-nuxt" />
+        <base-icon icon-svg="base-icon-static-gsap" />
+      </div>
+    </div>
+  </header>
+</template>
 
 <style lang="scss" scoped>
 .intro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  margin: 5rem auto;
 
-  &__portrait {
-    flex: 0 1 50%;
+  &__content-01 {
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    // @include respond(phone) {
-    //   flex: 0 1 100%;
-    // }
-  }
-
-  &__contenu {
-    flex: 0 1 50%;
-
-    @include respond(tab) {
-      flex: 0 1 100%;
+    .intro-portrait {
+      flex: 0 1 50%;
+      display: flex;
+      justify-content: flex-end;
     }
 
-    p,
-    h1 {
-      max-width: 40rem;
+    .intro-titles {
+      flex: 0 1 50%;
 
       @include respond(tab) {
-        margin: 0 auto;
+        flex: 0 1 100%;
+      }
+
+      #hello {
+        font-family: 'Exo', sans-serif;
+        font-weight: 900;
+        font-variation-settings: 'wght' 900;
+        font-size: var(--extra-big);
+        margin-bottom: 2rem;
+
+        @include respond(phone) {
+          font-size: var(--big);
+        }
+      }
+      #site-title {
+        font-family: 'Exo', sans-serif;
+        font-weight: 600;
+        font-variation-settings: 'wght' 600;
+        font-size: var(--normal);
       }
     }
+  }
+  &__content-02 {
+    max-width: 80%;
+    margin: 0 auto;
+    columns: 2 40rem;
+    column-gap: 2rem;
+
+    @include respond(special) {
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+
     .competences {
       width: 100%;
       margin: 5rem auto;
       display: flex;
       justify-content: flex-start;
-
-      @include respond(tab) {
-        justify-content: center;
-      }
 
       svg {
         filter: grayscale(100%);
