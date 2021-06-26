@@ -8,8 +8,8 @@
 
   },
   "portfolio": {
-    "paragraph1": "Development on Ruby on Rails during Le Wagon Bootcamp, one assigment for DrakkR agency in Nantes and personal portfolio in Vue.js - Nuxt.js.",
-    "paragraph2": "I also experiment with <a href=\"https://codepen.io/sybilrondeau\" class=\"body-link\">Codepen</a>.",
+    "paragraph1": "This is a few projects, one during Le Wagon bootcamp, an assigment for DrakkR agency (Nantes), and my personal portfolio in Vue.js - Nuxt.js.",
+    "paragraph2": "What's more, I experiment with <a href=\"https://codepen.io/sybilrondeau\" class=\"body-link\" target=\"_blank\">Codepen</a>.",
     "portfolioItems": {
       "portfolio3":
       {
@@ -47,9 +47,12 @@
     }
   }, 
   "contact": {
-    "title": "Contact",
+    "title": "Contact me !",
     "description": "Are you an established <strong>Company</strong>, a <strong>Startup</strong> business, a <strong>Web Agency</strong> or a <strong>Developer</strong> in need of a Front-end developer ?<br />I am available for short and long-term <strong>assignments</strong> on a freelance basis, as well as being open to offers to <strong>join your team</strong> !",
-    "form1": "Name - Company"
+    "form": "Name - Company",
+    "terms": ["I agree to the terms and", "privacy policy."],
+    "error": ["This field is required", "Please enter a valid email address."],
+    "submit": ["Clic on the plane to send the message !", "Thank you, I will get back to you very soon !"]
   },
   "tel": "+33 629 426 276",
   "legal": {

@@ -9,11 +9,13 @@
       }"
       target="target"
     ></div>
-    <the-navBar />
-    <div class="main">
-      <Nuxt />
+    <div class="layout-container">
+      <the-nav-bar />
+      <div class="main">
+        <Nuxt />
+      </div>
+      <the-footer />
     </div>
-    <the-social-links />
   </div>
 </template>
 
@@ -51,39 +53,37 @@ export default {
 </script>
 
 <style lang="scss">
-.main {
-  max-width: calc(100% - 16rem);
-  margin: 0 auto;
-  padding: 0 2rem;
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  @include respond(tab) {
-    max-width: 80%;
+  .main {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
   }
+  .cursor {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -20;
+    opacity: 1;
+    transition: transform 0.2s, background-color 0.2s;
 
-  @include respond(phone) {
-    max-width: 100%;
+    @media (any-pointer: none) {
+      display: none;
+    }
   }
-}
-.cursor {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: -20;
-  opacity: 1;
-  transition: transform 0.2s, background-color 0.2s;
-
-  @media (any-pointer: none) {
-    display: none;
+  .link-grow {
+    transform: scale(6) translate(-10%, -10%);
+    animation: blob 3s linear infinite alternate;
   }
-}
-.link-grow {
-  transform: scale(6) translate(-10%, -10%);
-  animation: blob 3s linear infinite alternate;
 }
 
 @keyframes blob {

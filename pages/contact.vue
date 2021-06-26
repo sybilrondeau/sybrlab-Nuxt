@@ -1,10 +1,10 @@
 <template>
   <section class="contact">
-    <h1>Contactez-moi !</h1>
-    <p v-html="$t('contact.description')"></p>
+    <h1>{{ $t('contact.title') }}</h1>
+    <p class="fade-up" v-html="$t('contact.description')"></p>
     <form
       method="post"
-      class="contact__form"
+      class="contact__form fade-up"
       name="contact"
       data-netlify="true"
       netlify-honeypot="bot-field"
@@ -13,7 +13,7 @@
       <input type="hidden" name="form-name" value="contact" />
       <div class="contact__form--item contact__form--name">
         <label for="name" :class="{ error: $v.name.$error }">{{
-          $t('contact.form1')
+          $t('contact.form')
         }}</label>
         <input
           id="name"
@@ -24,7 +24,7 @@
       </div>
       <div v-if="$v.name.$error">
         <div v-if="!$v.name.required" class="errorMessage">
-          Ce champ est requis.
+          {{ $t('contact.error[0]') }}
         </div>
       </div>
 
@@ -41,10 +41,10 @@
       </div>
       <div v-if="$v.email.$error">
         <div v-if="!$v.email.email" class="errorMessage">
-          Merci d'entrer une adresse email valide.
+          {{ $t('contact.error[1]') }}
         </div>
         <div v-if="!$v.email.required" class="errorMessage">
-          Ce champs est requis.
+          {{ $t('contact.error[0]') }}
         </div>
       </div>
 
@@ -60,7 +60,7 @@
       </div>
       <div v-if="$v.email.$error">
         <div v-if="!$v.message.required" class="errorMessage">
-          Ce champ est requis.
+          {{ $t('contact.error[0]') }}
         </div>
       </div>
 
@@ -75,10 +75,10 @@
           for="legal"
           class="label-legal"
           :class="{ error: $v.isChecked.$error }"
-          >En cochant cette case, j'accepte la
-          <nuxt-link :to="{ name: 'legal' }" class="body-link"
-            >politique de confidentialité.</nuxt-link
-          ></label
+          >{{ $t('contact.terms[0]') }}
+          <nuxt-link :to="{ name: 'legal' }" class="body-link">{{
+            $t('contact.terms[1]')
+          }}</nuxt-link></label
         >
       </div>
 
@@ -96,8 +96,11 @@
           />
         </button>
       </div>
-      <div v-if="isSubmitted">
-        <p>Merci pour ce message, je vous réponds très vite !</p>
+      <div v-if="!isSubmitted">
+        <p>{{ $t('contact.submit[0]') }}</p>
+      </div>
+      <div v-else>
+        <p>{{ $t('contact.submit[1]') }}</p>
       </div>
     </form>
   </section>
@@ -118,6 +121,14 @@ export default {
       isChecked: false,
       isSubmitted: false,
     };
+  },
+  mounted() {
+    gsap.from('.fade-up', {
+      y: '4rem',
+      opacity: 0,
+      duration: 1,
+      stagger: 0.25,
+    });
   },
   validations: {
     name: { required },

@@ -11,14 +11,14 @@
         <h1 id="site-title">{{ $t('intro.subtitle') }}</h1>
       </div>
     </div>
-    <div class="intro__content-02">
-      <p>
+    <div ref="contentItems" class="intro__content-02">
+      <p class="fade-up">
         {{ $t('intro.paragraph2') }}
       </p>
-      <p>{{ $t('intro.paragraph3') }}</p>
+      <p class="fade-up">{{ $t('intro.paragraph3') }}</p>
 
-      <p v-html="$t('intro.paragraph4')"></p>
-      <div class="competences">
+      <p class="fade-up" v-html="$t('intro.paragraph4')"></p>
+      <div class="competences fade-up">
         <base-icon icon-svg="base-icon-static-sass" />
         <base-icon icon-svg="base-icon-static-vue" />
         <base-icon icon-svg="base-icon-static-nuxt" />
@@ -28,9 +28,24 @@
   </header>
 </template>
 
+<script>
+import { gsap } from 'gsap';
+
+export default {
+  mounted() {
+    gsap.from('.fade-up', {
+      y: '4rem',
+      opacity: 0,
+      duration: 1,
+      stagger: 0.25,
+    });
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .intro {
-  margin: 5rem auto;
+  margin: 2rem auto 20rem;
 
   &__content-01 {
     width: 100%;
@@ -72,21 +87,16 @@
     }
   }
   &__content-02 {
-    max-width: 80%;
+    max-width: 100rem;
     margin: 0 auto;
     columns: 2 40rem;
     column-gap: 2rem;
-
-    @include respond(special) {
-      max-width: 100%;
-      margin-top: 2rem;
-    }
 
     .competences {
       width: 100%;
       margin: 5rem auto;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
 
       svg {
         filter: grayscale(100%);

@@ -20,7 +20,7 @@ export default {};
   color: var(--grey-dark);
   font-family: 'Exo', sans-serif;
   font-weight: 600;
-  font-size: var(--extra-small);
+  font-size: var(--small);
   padding-left: 4rem;
   transition: transform 0.2s;
 

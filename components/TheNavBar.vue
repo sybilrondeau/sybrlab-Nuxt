@@ -53,7 +53,6 @@ export default {};
   &__logo {
     flex: 0 1 30%;
     padding: 2rem 0;
-    margin-left: 6rem;
 
     @include respond(phone) {
       margin-left: 0;

@@ -25,9 +25,7 @@
         />
         <div class="portfolio__item--contenu">
           <div class="item-title">
-            <div class="title-arrow">
-              <h2>{{ portfolioItem.title }}</h2>
-            </div>
+            <h2>{{ portfolioItem.title }}</h2>
             <p>{{ portfolioItem.id }}.</p>
           </div>
           <div class="item-credits">
@@ -63,16 +61,28 @@
   </section>
 </template>
 
+<script>
+import { gsap } from 'gsap';
+
+export default {
+  mounted() {
+    gsap.from('.portfolio__item', {
+      y: '4rem',
+      opacity: 0,
+      duration: 1,
+      stagger: { each: 0.4, grid: [1, 3] },
+    });
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .portfolio-section {
-  margin: 5rem 0 5rem 6rem;
+  margin: 5rem 0 10rem;
 
-  @include respond(phone) {
-    margin: 5rem 0;
-  }
   .title-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 
     svg {
@@ -83,17 +93,14 @@
   }
   p {
     max-width: 60rem;
+    margin: 0 auto;
   }
 
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 5rem;
-
-    @include respond(phone) {
-      justify-content: center;
-    }
 
     &__item {
       border: var(--border);
@@ -108,7 +115,6 @@
         width: 100%;
         height: 30rem;
         object-fit: cover;
-        border-radius: 0.5rem;
       }
 
       &--contenu {
@@ -119,16 +125,13 @@
         }
 
         .item-title {
-          //border-top: 2px solid var(--grey-dark);
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: first baseline;
           margin-bottom: 2rem;
-          //padding-top: 1rem;
 
-          .title-arrow {
-            display: flex;
-            align-items: center;
+          p {
+            margin: 0;
           }
 
           svg {

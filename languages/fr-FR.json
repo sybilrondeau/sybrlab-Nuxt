@@ -7,8 +7,8 @@
     "paragraph4": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans. Ce métier était ma première reconversion, après 12 ans en tant que manipulatrice en radiologie médicale aux urgences (et de nuit !)."  
   },
   "portfolio": {
-    "paragraph1": "Développement fullstack sur Ruby on Rails pendant le bootcamp du Wagon, une courte mission de front-end pour l'agence DrakkR à Nantes et mon portfolio avec Vue.js - Nuxt.js.",
-    "paragraph2": "J'expérimente aussi sur <a href=\"https://codepen.io/sybilrondeau\" class=\"body-link\">Codepen</a>.",
+    "paragraph1": "Voici quelques projets, celui du bootcamp Le Wagon, une mission de front-end pour l'agence DrakkR à Nantes et mon portfolio avec Vue.js - Nuxt.js.",
+    "paragraph2": "J'expérimente aussi sur <a href=\"https://codepen.io/sybilrondeau\" class=\"body-link\" target=\"_blank\">Codepen</a>.",
     "portfolioItems": {
       "portfolio3":
       {
@@ -46,9 +46,12 @@
     }
   }, 
   "contact": {
-    "title": "Contact",
+    "title": "Contactez-moi !",
     "description": "Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une développeuse Front-end ?<br />Je suis disponible pour des <strong>missions</strong> de courte ou longue durée, et à l'écoute des propositions de <strong>postes</strong> dans ce domaine.",
-    "form1": "Nom - Entreprise"
+    "form": "Nom - Entreprise",
+    "terms": ["En cochant cette case, j'accepte la", "politique de confidentialité."],
+    "error": ["Ce champ est requis", "Merci d'entrer une adresse email valide."],
+    "submit": ["Cliquez sur l'avion pour envoyer le message !", "Merci pour ce message, je vous réponds très vite !"]
   },
   "tel": "06 29 42 62 76",
   "legal": {
