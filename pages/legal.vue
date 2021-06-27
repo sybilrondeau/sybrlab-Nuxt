@@ -13,6 +13,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  head: {
+    title: 'Mentions Légales',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Mentions légales et Politique de confidentialité du site SybR Lab.',
+      },
+    ],
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .terms {
   height: 100vh;

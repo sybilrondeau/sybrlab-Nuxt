@@ -127,6 +127,16 @@ export default {
       isSubmitted: false,
     };
   },
+  head: {
+    title: 'SybR Lab - Contact',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Formulaire de contact de SybR Lab',
+      },
+    ],
+  },
   mounted() {
     gsap.from('.fade-up', {
       y: '4rem',

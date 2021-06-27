@@ -65,6 +65,17 @@
 import { gsap } from 'gsap';
 
 export default {
+  head: {
+    title: 'Portfolio de SybR Lab',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Portfolio de développeuse Sybil Rondeau - SybR Lab.',
+      },
+    ],
+  },
   mounted() {
     gsap.from('.portfolio__item', {
       y: '4rem',

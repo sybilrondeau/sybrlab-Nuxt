@@ -32,6 +32,16 @@
 import { gsap } from 'gsap';
 
 export default {
+  head: {
+    title: "Page d'accueil SybR Lab",
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Developpeuse front-end à Nantes.',
+      },
+    ],
+  },
   mounted() {
     gsap.from('.fade-up', {
       y: '4rem',

@@ -17,11 +17,6 @@ export default {
         content: 'width=device-width, initial-scale=1',
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'Developpeuse front-end à Nantes.',
-      },
-      {
         property: 'og:title',
         content: 'SybR Lab',
       },
