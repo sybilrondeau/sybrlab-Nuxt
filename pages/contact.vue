@@ -19,6 +19,7 @@
         <input
           id="name"
           v-model="name"
+          name="name"
           type="text"
           @blur="$v.name.$touch()"
         />
@@ -36,6 +37,7 @@
         <input
           id="email"
           v-model="email"
+          name="email"
           type="email"
           @blur="$v.email.$touch()"
         />
@@ -56,6 +58,7 @@
         <textarea
           id="message"
           v-model="message"
+          name="message"
           @blur="$v.message.$touch()"
         ></textarea>
       </div>
@@ -69,6 +72,7 @@
         <input
           id="legal"
           v-model="isChecked"
+          name="legal"
           type="checkbox"
           @change="$v.isChecked.$touch()"
         />
