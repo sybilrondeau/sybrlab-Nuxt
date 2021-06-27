@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  margin: 2rem auto 20rem;
+  margin: 2rem auto 10rem;
 
   &__content-01 {
     width: 100%;
@@ -96,7 +96,7 @@ export default {
       width: 100%;
       margin: 5rem auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
 
       svg {
         filter: grayscale(100%);

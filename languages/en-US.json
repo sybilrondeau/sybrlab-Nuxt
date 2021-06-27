@@ -18,7 +18,6 @@
         "description": "I carried out Front-end work on this <strong>application</strong> that presents the competition results of the Word Slalom Skaters Association. Rankings are displayed with the Datatables Plugin in <strong>Ruby on Rails</strong> framework.",
         "image": "wssa-650",
         "alt": "WSSA Screenshot",
-        "margin": "0 0 0 25.89rem",
         "creditMakers": ["Application DrakkR - Nantes", "Web Design : Ambroise Nicolao"],
         "creditTechs": ["Ruby on Rails", "Datatables"]
       },
@@ -29,7 +28,6 @@
         "description": "I like <strong>clean</strong>, smooth websites, where typography and <strong>design</strong> have an important place. This website is made with Vue.js - Nuxt.js, with <strong>Greensock</strong> library powering animation, <strong>i18n</strong> providing internationalization and <strong>Vuelidate</strong> for the contact form.",
         "image": "sybrlab-650",
         "alt": "SybR Lab Logo",
-        "margin": "0 25.89rem 0 0",
         "creditMakers": ["Vue.js website","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
         "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
       },
@@ -40,7 +38,6 @@
         "description": "This is a project made in ten days during Le Wagon bootcamp : it is a customer relationship management <strong>application</strong> designed for photographers. It can be viewed on <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>, presented by Ophélie, project coordinator.",
         "image": "photographr-650",
         "alt": "PhotographR Screenshot",
-        "margin": "0 25.89rem 0 0",
         "creditMakers": ["Le Wagon Project", "Team work of 3"],
         "creditTechs": ["Ruby on Rails"]
       }
