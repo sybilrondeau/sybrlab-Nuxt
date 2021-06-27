@@ -3,6 +3,7 @@
     <h1>{{ $t('contact.title') }}</h1>
     <p class="fade-up" v-html="$t('contact.description')"></p>
     <form
+      ref="contact"
       method="post"
       class="contact__form fade-up"
       name="contact"
@@ -155,6 +156,17 @@ export default {
           ],
         },
       });
+      const contactForm = this.$refs.contact;
+      const formData = new FormData(contactForm);
+      fetch('/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then()
+        .catch((error) => alert(error));
     },
   },
 };
