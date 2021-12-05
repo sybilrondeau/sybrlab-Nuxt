@@ -1,7 +1,7 @@
 <template>
   <section class="contact">
     <h1>{{ $t('contact.title') }}</h1>
-    <p class="fade-up" v-html="$t('contact.description')"></p>
+    <!-- <p class="fade-up" v-html="$t('contact.description')"></p> -->
     <form
       ref="contact"
       method="post"

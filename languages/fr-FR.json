@@ -2,61 +2,85 @@
   "intro": {
     "title": "Bonjour",
     "subtitle": "Je suis Sybil Rondeau, Développeuse Front-end.",
-    "paragraph2": "Passionnée, déterminée, je suis autodidacte avant de passer la certification du Wagon Nantes en mars 2020. Je me forme en continu depuis, notamment sur les frameworks Vue.js et Nuxt.js.",
-    "paragraph3": "J'ai réalisé des sites WordPress pendant 2 ans. Cela m'a permis de m'intéresser aux notions de performances, accessibilité, sécurité et SEO : Un ensemble de bonnes pratiques à implémenter dès la construction d'un site, indispensable à sa longévité et une base solide à un référencement naturel de qualité.",
-    "paragraph4": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans. Ce métier était ma première reconversion, après 12 ans en tant que manipulatrice en radiologie médicale aux urgences (et de nuit !)."  
+    "paragraph2": "Passionnée, déterminée, je suis autodidacte avant de passer la certification du Wagon Nantes en mars 2020. Je continue ma formation depuis octobre 2021 par une alternance en UX Design chez Oniti à Nantes.",
+    "paragraph4": "Je suis aussi SybR, <strong><a class=\"body-link\" href=\"https://sybilrondeau.com\" target=\"_blank\" rel=\"noopener noreferrer\">photographe</a></strong> documentaire de famille depuis plus de 10 ans. Ce métier était ma première reconversion, après 12 ans en tant que manipulatrice en radiologie médicale aux urgences (et de nuit !)."
   },
   "portfolio": {
     "paragraph1": "Voici quelques projets, celui du bootcamp Le Wagon, une mission de front-end pour l'agence DrakkR à Nantes et mon portfolio avec Vue.js - Nuxt.js.",
     "paragraph2": "J'expérimente aussi sur <a href=\"https://codepen.io/sybilrondeau\" class=\"body-link\" target=\"_blank\">Codepen</a>.",
     "portfolioItems": {
-      "portfolio3":
-      {
+      "portfolio3": {
         "id": "03",
         "title": "WSSA",
         "description": "Un travail d’implémentation du Front-end pour une <strong>application</strong> qui recense les résultats des compétitions de la World Slalom Skaters Association. Le palmarès est affiché par des tables gérées par le plugin Datatables en Javascript dans le framework <strong>Ruby on Rails</strong>.",
         "image": "wssa-650",
         "alt": "Copie d'écran de l'application WSSA",
-        "creditMakers": ["Application DrakkR - Nantes", "Web Design : Ambroise Nicolao"],
-        "creditTechs": ["Ruby on Rails", "Datatables"]
+        "creditMakers": [
+          "Application DrakkR - Nantes",
+          "Web Design : Ambroise Nicolao"
+        ],
+        "creditTechs": [
+          "Ruby on Rails",
+          "Datatables"
+        ]
       },
-      "portfolio2":
-      {
+      "portfolio2": {
         "id": "02",
         "title": "SybR Lab",
         "description": "J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>. Le site est construit avec Vue.js - Nuxt.js. J'utilise la librairie Javascript <strong>Greensock</strong> pour certaines animations, <strong>i18n</strong> pour le multilingue, <strong>Vuelidate</strong> pour le formulaire de contact.",
         "image": "sybrlab-650",
         "alt": "Logo SybR Lab",
-        "creditMakers": ["Site Vue.js","Web Design : Sybil Rondeau", "Illustrations : Loeiza Coccolini"],
-        "creditTechs": ["Vue.js", "Nuxt", "GSAP"]
+        "creditMakers": [
+          "Site Vue.js",
+          "Web Design : Sybil Rondeau",
+          "Illustrations : Loeiza Coccolini"
+        ],
+        "creditTechs": [
+          "Vue.js",
+          "Nuxt",
+          "GSAP"
+        ]
       },
-      "portfolio1":
-      {
+      "portfolio1": {
         "id": "01",
         "title": "PhotographR",
         "description": "Cette application est le projet de fin de Wagon réalisé en dix jours avec deux autres élèves. Il s'agit d'un <strong>gestionnaire de tâches</strong> pour les photographes qui centralise également toutes les informations clients. Découvrez le sur <a class=\"body-link\" href=\"https://youtu.be/E-15MxRZ4BU?t=82\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a> présentée par la porteuse de projet Ophélie.",
         "image": "photographr-650",
         "alt": "Copie d'écran de l'application PhotographR",
-        "creditMakers": ["Projet du Wagon", "Travail en équipe de 3"],
-        "creditTechs": ["Ruby on Rails"]
+        "creditMakers": [
+          "Projet du Wagon",
+          "Travail en équipe de 3"
+        ],
+        "creditTechs": [
+          "Ruby on Rails"
+        ]
       }
     }
-  }, 
+  },
   "contact": {
-    "title": "Contactez-moi !",
+    "title": "Bonjour !",
     "description": "Vous êtes une <strong>Entreprise</strong>, une <strong>Start-up</strong>, une <strong>Agence Web</strong> ou un(e) <strong>Développeur(euse)</strong> et vous avez besoin d’une développeuse Front-end ?<br />Je suis disponible pour des <strong>missions</strong> de courte ou longue durée, et à l'écoute des propositions de <strong>postes</strong> dans ce domaine.",
     "form": "Nom - Entreprise",
-    "terms": ["En cochant cette case, j'accepte la", "politique de confidentialité."],
-    "error": ["Ce champ est requis", "Merci d'entrer une adresse email valide."],
-    "submit": ["Cliquez sur l'avion pour envoyer le message !", "Merci pour ce message, je vous réponds très vite !"]
+    "terms": [
+      "En cochant cette case, j'accepte la",
+      "politique de confidentialité."
+    ],
+    "error": [
+      "Ce champ est requis",
+      "Merci d'entrer une adresse email valide."
+    ],
+    "submit": [
+      "Cliquez sur l'avion pour envoyer le message !",
+      "Merci pour ce message, je vous réponds très vite !"
+    ]
   },
   "tel": "06 29 42 62 76",
   "legal": {
     "title": "Mentions Légales",
     "legal1": "Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300 Nantes",
-     "legal2": "Hébergeur : Netlify",
-     "legal3": "Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250",
-     "legal4": "Ce site utilise un cookie nécessaire à la détection du language du navigateur.",
-     "legal5": "Par l'intermédiaire du formulaire de contact, je récolte votre nom et votre adresse email uniquement dans le but de traiter votre demande."
+    "legal2": "Hébergeur : Netlify",
+    "legal3": "Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250",
+    "legal4": "Ce site utilise un cookie nécessaire à la détection du language du navigateur.",
+    "legal5": "Par l'intermédiaire du formulaire de contact, je récolte votre nom et votre adresse email uniquement dans le but de traiter votre demande."
   }
 }

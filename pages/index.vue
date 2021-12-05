@@ -15,8 +15,6 @@
       <p class="fade-up">
         {{ $t('intro.paragraph2') }}
       </p>
-      <p class="fade-up">{{ $t('intro.paragraph3') }}</p>
-
       <p class="fade-up" v-html="$t('intro.paragraph4')"></p>
       <div class="competences fade-up">
         <base-icon icon-svg="base-icon-static-sass" />
